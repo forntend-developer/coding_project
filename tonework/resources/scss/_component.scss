@@ -1,39 +1,5 @@
 /** Font **/
-//Font Size
-h1 {
-   font-size: $fs-xxxlg;
-   font-weight: $fw-b;
-   line-height: 74px;
-}
-h2 {
-   font-size: $fs-xlg;
-   font-weight: $fw-sb;
-   line-height: 64px;
-}
-h3 {
-   font-size: $fs-l;
-   font-weight: $fw-m;
-   line-height: 48px;
-}
-h4 {
-   font-size: $fs-md;
-   font-weight: $fw-m;
-   line-height: 34px;
-}
-h5 {
-   font-size: $fs-m;
-   font-weight: $fw-m;
-   line-height: 32px;
-}
-h6 {
-   font-size: $fs-sm;
-   font-weight: $fw-m;
-   line-height: 26px;
-}
-caption {
-   font-size: $fs-xxs;
-   line-height: 24px;
-}
+
 .txt {
    &_body1 {
       font-size: $fs-s;
@@ -57,37 +23,10 @@ caption {
 /** Font Family **/
 .font {
    &_kr {
-      font-family: $font-noto !important;
+      font-family: $font-SUIT !important;
    }
    &_en {
       font-family: $font-pop !important;
-   }
-   &_noto {
-      font-family: $font-noto !important;
-   }
-   &_pop {
-      font-family: $font-pop !important;
-   }
-   &_aritadt{
-      font-family: $font-aritadt !important;
-   }
-   &_aritadm{
-      font-family: $font-aritadm !important;
-   }
-   &_aritadsb{
-      font-family: $font-aritadsb !important;
-   }
-   &_aritadb{
-      font-family: $font-aritadb !important;
-   }
-   &_aritasans {
-      font-family: $font-aritasans !important;
-   }
-   &_lgsmha {
-      font-family: $font-lgsmha !important;
-   }
-   &_APHQ {
-      font-family: $font-APHQ !important;
    }
 }
 /** Font weight **/

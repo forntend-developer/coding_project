@@ -1,6 +1,6 @@
 // font
 @mixin ko {
-   font-family: $font-noto;
+   font-family: $font-SUIT;
 }
 @mixin en {
    font-family: $font-pop;
@@ -18,6 +18,14 @@
 	display: -webkit-box;
 	display: flex;
 	justify-content:flex-start;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+@mixin flexEnd {
+	display: -webkit-box;
+	display: flex;
+	justify-content:flex-end;
 	-webkit-box-align: center;
 	align-items: center;
 }
