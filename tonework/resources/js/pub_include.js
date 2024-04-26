@@ -196,106 +196,138 @@ var include = {
     document.write("<!-- // 모바일 메뉴 활성화 버튼 -->");
     document.write("</div>");
   },
-	footer : function(){
-		document.write('<footer class="footer_wrap">');
-		document.write('<div class="family_site">');
-		document.write('<button type="button" class="fam_btn" onclick="m_famToggle();"><span>Family Site</span></button>');
-		document.write('<ul>');
-		document.write('<li><a href="#n" target="_blank">Portal system</a></li>');
-		document.write('<li><a href="#n" target="_blank">Digital Library</a></li>');
-		document.write('<li><a href="#n" target="_blank">Metaverse</a></li>');
-		document.write('</ul>');
-		document.write('</div>');
-		document.write('<div class="inner on">'); /* 20231206 클래스 on 추가 */
-		document.write('<a href="#n" class="btm_logo"></a>');
-		document.write('<button type="button" class="btn_footer_more" onclick="m_footerToggle();">');
-		document.write('<span class="blind">menu open</span>');
-		document.write('</button>');
-		document.write('<div class="sitemap">');
-		document.write('<ul>');
-		document.write('<li>About</li>');
-		document.write('<li><a href="#n">About Taejae</a></li>');
-		document.write('<li><a href="#n">Vision & Mission</a></li>');
-		document.write('<li><a href="#n">History of Taejae</a></li>');
-		document.write('<li><a href="#n">Leadership</a></li>');
-		document.write('<li><a href="#n">Taejae at a Glance</a></li>');
-		document.write('<li><a href="#n">Visit Taejae</a></li>');
-		document.write('</ul>');
-		document.write('<ul>');
-		document.write('<li>Admissions</li>');
-		document.write('<li><a href="#n">Admissions</a></li>');
-		document.write('<li><a href="#n">For International Students</a></li>');
-		document.write('<li><a href="#n">For Korean Students</a></li>');
-		document.write('<li><a href="#n">Tuition & Scholarship</a></li>');
-		document.write('<li><a href="#n">FAQ</a></li>');
-		document.write('<li><a href="#n">Contact</a></li>');
-		document.write('</ul>');
-		document.write('<ul>');
-		document.write('<li>Academics</li>');
-		document.write('<li><a href="#n">Schools</a></li>');
-		document.write('<li><a href="#n">Faculty</a></li>');
-		document.write('</ul>');
-		document.write('<ul>');
-		document.write('<li>Support</li>');
-		document.write('<li><a href="#n">Education at Taejae</a></li>');
-		document.write('<li><a href="#n">Global Experience</a></li>');
-		document.write('<li><a href="#n">Student Success</a></li>');
-		document.write('<li><a href="#n">Metaverse</a></li>');
-		document.write('<li><a href="#n">Digital Library/a></li>');
-		document.write('</ul>');
-		document.write('<ul>');
-		document.write('<li>Story</li>');
-		document.write('<li><a href="#n">Spectrum</a></li>');
-		document.write('<li><a href="#n">Podium</a></li>');
-		document.write('<li><a href="#n">Momentum</a></li>');
-		document.write('</ul>');
-		document.write('<ul>');
-		document.write('<li>Today</li>');
-		document.write('<li><a href="#n">Today</a></li>');
-		document.write('<li><a href="#n">News</a></li>');
-		document.write('<li><a href="#n">Notice</a></li>');
-		document.write('<li><a href="#n">Press Release</a></li>');
-		document.write('<li><a href="#n">Status</a></li>');
-		document.write('</ul>');
-		document.write('</div>');
-		document.write('<ul class="user">');
-		document.write('<li><a href="#n">Prospective Students</a></li>');
-		document.write('<li><a href="#n">Students</a></li>');
-		document.write('<li><a href="#n">Faculty & Staff</a></li>');
-		document.write('<li><a href="#n">Visitors</a></li>');
-		document.write('</ul>');
-		document.write('</div>');
-
-		document.write('<div class="foot_util">');
-		document.write('<ul class="inform">');
-		document.write('<li><a href="#" target="_blank">Academy info</a></li>');
-		document.write('<li><a href="#" target="_blank"><strong>Privacy Policy</strong></a></li>');
-		document.write('<li><a href="#" target="_blank">Contact</a></li>');
-		document.write('<li><a href="#" target="_blank">Recruitment</a></li>');
-		document.write('</ul>');
-		document.write('<div class="sns_wrap">');
-		document.write('<a href="#n" class="lnk_youtube" target="_blank">youtube</a>');
-		document.write('<a href="#n" class="lnk_instagram" target="_blank">instagram</a>');
-		document.write('<!-- <a href="#n" class="lnk_linkedin" target="_blank">youtube</a>');
-		document.write('<a href="#n" class="lnk_facebook" target="_blank">youtube</a> -->');
-		document.write('</div>');
-		document.write('</div>');
-		document.write('<div class="co_info">');
-		document.write('<address>');
-		document.write('<p>Taejae University</p>');
-		document.write('<span>22-8 Changdeokgung 5-gil, Jongno-gu, Seoul 03151<a href="mailto:info@taejae.ac.kr" class="mail">info@taejae.ac.kr</a><br>');
-		document.write('Copyright 2023 Taejae University All Rights Reserved.</span>');
-		document.write('</address>');
-		document.write('<div class="footer_banner">');
-		document.write('<a href="#n" target="_blank"><img src="../../../img/img_banner_nal.png" alt="국회도서관"></a>');
-		document.write('<a href="#n" target="_blank"><img src="../../../img/img_banner_halyym.png" alt="한림대학교"></a>');
-		document.write('<a href="#n" target="_blank"><img src="../../../img/img_banner_udemy.png" alt="udemy"></a>');
-		document.write('<a href="#n" target="_blank"><img src="../../../img/img_banner_hana.png" alt="하나은행"></a>');
-		document.write('</div>');
-		document.write('</div>');
-		document.write('</footer>');
-		document.write('</div>');
-	},
+	 footer: function () {
+    document.write('<div class="grid_wrap">');
+    document.write("<!-- footer_top -->");
+    document.write('<div class="footer_top">');
+    document.write(
+      '<button class="footer_toggle" onclick="m_footerToggle();">푸터 상세보기</button>'
+    );
+    document.write("<!-- footer_logo -->");
+    document.write('<div class="footer_logo">');
+    document.write(
+      '<img src="/resources/images/common/logo_fotter.svg" alt="">'
+    );
+    document.write(
+      '<img class="ico_star" src="/resources/images/icon/icon_34_star@2x.png" alt="">'
+    );
+    document.write("</div>");
+    document.write("<!-- // footer_logo -->");
+    document.write("<!-- site_map -->");
+    document.write('<ul class="site_map">');
+    document.write('<li class="item_box">');
+    document.write("<dl>");
+    document.write("<dt>");
+    document.write('<a href="#">ABOUT US</a>');
+    document.write("</dt>");
+    document.write("<dd>");
+    document.write('<ul class="depth">');
+    document.write('<li><a href="#">브랜드 스토리</a></li>');
+    document.write('<li><a href="#">스토어</a></li>');
+    document.write("</ul>");
+    document.write("</dd>");
+    document.write("</dl>");
+    document.write("</li>");
+    document.write('<li class="item_box">');
+    document.write("<dl>");
+    document.write("<dt>");
+    document.write('<a href="#">DISCOVER YOUR TONE</a>');
+    document.write("</dt>");
+    document.write("<dd>");
+    document.write('<ul class="depth">');
+    document.write(
+      '<li><a href="/html/skin_tone.html#skinToneFinder">톤워크 바이미</a></li>'
+    );
+    document.write(
+      '<li><a href="/html/skin_tone.html#skinTonePicker">톤링커</a></li>'
+    );
+    document.write(
+      '<li><a href="/html/skin_tone.html#skinToneLinker2" onclick="gnbAction();">톤링커+</a></li>'
+    );
+    document.write("</ul>");
+    document.write("</dd>");
+    document.write("</dl>");
+    document.write("</li>");
+    document.write('<li class="item_box">');
+    document.write("<dl>");
+    document.write("<dt>");
+    document.write('<a href="#">PRODUCTS</a>');
+    document.write("</dt>");
+    document.write("<dd>");
+    document.write('<ul class="depth">');
+    document.write('<li class="mo"><a href="#">전체보기</a></li>');
+    document.write('<li><a href="#">페이스(Face)</a></li>');
+    document.write('<li><a href="#">립(LIP)</a></li>');
+    document.write("</ul>");
+    document.write("</dd>");
+    document.write("</dl>");
+    document.write("</li>");
+    document.write('<li class="item_box">');
+    document.write("<dl>");
+    document.write("<dt>");
+    document.write('<a href="#">ISSUE</a>');
+    document.write("</dt>");
+    document.write("<dd>");
+    document.write('<ul class="depth">');
+    document.write('<li><a href="#">브랜드 이슈</a></li>');
+    document.write('<li><a href="#">당첨자 발표</a></li>');
+    document.write("</ul>");
+    document.write("</dd>");
+    document.write("</dl>");
+    document.write("</li>");
+    document.write('<li class="item_box">');
+    document.write("<dl>");
+    document.write("<dt>");
+    document.write('<a href="#">COMMUNITY</a>');
+    document.write("</dt>");
+    document.write("<dd>");
+    document.write('<ul class="depth">');
+    document.write('<li class="mo"><a href="">커뮤니티 홈</a></li>');
+    document.write('<li><a href="#">공지사항</a></li>');
+    document.write('<li><a href="#">FAQ</a></li>');
+    document.write('<li><a href="#">Q&A</a></li>');
+    document.write('<li><a href="#">Review</a></li>');
+    document.write("</ul>");
+    document.write("</dd>");
+    document.write("</dl>");
+    document.write("</li>");
+    document.write("</ul>");
+    document.write("<!-- // site_map -->");
+    document.write("</div>");
+    document.write("<!-- // footer_top -->");
+    document.write('<div class="footer_bottom">');
+    document.write('<div class="footer_address">');
+    document.write('<div class="company_info">');
+    document.write('<p class="name">(주)아모레퍼시픽</p>');
+    document.write('<div class="address">');
+    document.write("<p>서울특별시 용산구 한강대로 100 (한강로2가 181)</p>");
+    document.write(
+      "<p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>"
+    );
+    document.write("</div>");
+    document.write("</div>");
+    document.write('<div class="sns_link">');
+    document.write('<a href="#" class="icon_facebook">페이스북 바로가기</a>');
+    document.write('<a href="#" class="icon_youtube">유튜브 바로가기</a>');
+    document.write('<a href="#" class="icon_instar">인스타그램 바로가기</a>');
+    document.write("</div>");
+    document.write("</div>");
+    document.write('<div class="footer_util">');
+    document.write('<ul class="util_m">');
+    document.write('<li><a href="#">서비스이용약관</a></li>');
+    document.write(
+      '<li><a href="#"><strong>개인정보처리방침</strong></a></li>'
+    );
+    document.write('<li><a href="#">영상정보처리방침</a></li>');
+    document.write('<li><a href="#" target="_blank">뷰티포인트</a></li>');
+    document.write("</ul>");
+    document.write(
+      '<p class="copy_right">ⓒ AMOREPACIFIC CORPORATION. All rights reserved.</p>'
+    );
+    document.write("</div>");
+    document.write("</div>");
+    document.write("</div>");
+  },
 	quickBtn: function () {
     document.write('<div class="quick_btn">');
     document.write(

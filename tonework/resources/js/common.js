@@ -2,10 +2,10 @@ $(document).ready(function(){
   
   //스크롤시 로고 변형
   const tl0 = gsap.timeline();
-  tl0.to(".main header .logo", { position: 'absolute', x:0, y:0, width:240, height:30}); 
+  tl0.to(".main header .logo", { position: 'absolute', top:0, left:0, width:240, height:30}); 
   ScrollTrigger.create({
     animation: tl0,
-    trigger: ".section01",
+    trigger: ".main_top",
     start: "top+=500px center",
     end: "bottom-=100px center",
     scrub: true,
@@ -47,10 +47,47 @@ $(document).ready(function(){
       },
     },
   });
-
-
-
   
+  // main_cnt_02
+  function mainAutoRolling() {
+    const rollingWrap = $('.rolling_wrap');
+    
+    rollingWrap.each(function() {
+      const item = $(this).find('.item');
+      let currentIdx = 0;
+
+      item.each(function(i){
+        $(this).css({top:`${i*100}%`});
+      })    
+    
+      function move(i) {
+        const currentSlide = item.eq(currentIdx);
+        const nextSlide = item.eq(i);
+
+        currentSlide.animate({top:'-100%'});
+        nextSlide.css({top:'100%'}).animate({top:0});
+        
+        currentIdx = i;
+      }
+
+      function autoRolling() {
+        setInterval(() => {
+          let nextIdx = currentIdx + 1;
+          if(nextIdx === item.length) {
+            nextIdx = 0;
+          }
+          move(nextIdx);
+        },3000)
+      }
+
+      autoRolling();
+    })
+
+    setInterval(() => {
+      $('.main_cnt_02').toggleClass('active')
+    },3000)
+  }
+
   //메인 바이 미, 톤 링커 슬라이드
   var bymeSwiper = new Swiper(".byme_swiper", {
     slidesPerView: 1,
@@ -68,7 +105,7 @@ $(document).ready(function(){
   });
 
   //메인 with 톤워크 슬라이드
-  var withSwiper = new Swiper(".with_swiper", {
+  var withSwiper = new Swiper(".main_sns_swiper", {
     slidesPerView: 4,
     speed: 1000,
     spaceBetween:8,
@@ -90,60 +127,61 @@ $(document).ready(function(){
   // }
 
 
-const tl1 = gsap.timeline();
-tl1.to(".brd_ani_line01", { strokeDashoffset: 0,}); 
-ScrollTrigger.create({
-  animation: tl1,
-  trigger: ".step_01",
-  start: "top+=100px center",
-  end: "bottom-=100px center",
-  scrub: 1,
-  markers: true,
-  toggleClass:{targets:'.number.number01',className:'active'},
-})
+  //브랜드 스토리 svg 라인 그리기
+  const tl1 = gsap.timeline();
+  tl1.to(".brd_ani_line01", { strokeDashoffset: 0,}); 
+  ScrollTrigger.create({
+    animation: tl1,
+    trigger: ".step_01",
+    start: "top+=100px center",
+    end: "bottom-=100px center",
+    scrub: 1,
+    markers: true,
+    toggleClass:{targets:'.number.number01',className:'active'},
+  })
 
-const tl2 = gsap.timeline();
-tl2.to(".brd_ani_line02", { strokeDashoffset: 0,});
-ScrollTrigger.create({
-  animation: tl2,
-  trigger: ".step_02",
-  start: "top+=100px center",
-  end: "bottom-=100px center",
-  scrub: 1,
-  markers: true,
-  toggleClass:{targets:'.number.number02',className:'active'},
-})
+  const tl2 = gsap.timeline();
+  tl2.to(".brd_ani_line02", { strokeDashoffset: 0,});
+  ScrollTrigger.create({
+    animation: tl2,
+    trigger: ".step_02",
+    start: "top+=100px center",
+    end: "bottom-=100px center",
+    scrub: 1,
+    markers: true,
+    toggleClass:{targets:'.number.number02',className:'active'},
+  })
 
-const tl3 = gsap.timeline();
-tl3.to(".brd_ani_line03", { strokeDashoffset: 0,});
-ScrollTrigger.create({
-  animation: tl3,
-  trigger: ".step_03",
-  start: "top+=100px center",
-  end: "bottom-=100px center",
-  scrub: 1,
-  markers: true,
-  toggleClass:{targets:'.number.number03',className:'active'},
-})
+  const tl3 = gsap.timeline();
+  tl3.to(".brd_ani_line03", { strokeDashoffset: 0,});
+  ScrollTrigger.create({
+    animation: tl3,
+    trigger: ".step_03",
+    start: "top+=100px center",
+    end: "bottom-=100px center",
+    scrub: 1,
+    markers: true,
+    toggleClass:{targets:'.number.number03',className:'active'},
+  })
 
-ScrollTrigger.create({
-  trigger: ".step_04",
-  start: "top+=100px center",
-  end: "bottom-=100px center",
-  scrub: 1,
-  markers: true,
-  toggleClass:{targets:'.step_final',className:'active'},
-})
+  ScrollTrigger.create({
+    trigger: ".step_04",
+    start: "top+=100px center",
+    end: "bottom-=100px center",
+    scrub: 1,
+    markers: true,
+    toggleClass:{targets:'.step_final',className:'active'},
+  })
 
-const tl4 = gsap.timeline();
-tl4.to(".ico_star", { rotation: 360,});
-ScrollTrigger.create({
-  animation: tl4,
-  trigger: ".section03",
-  start: "top-=200px center",
-  end: "bottom-=100px center",
-  scrub: true,
-  markers: true,
-})
+  const tl4 = gsap.timeline();
+  tl4.to(".ico_star", { rotation: 360,});
+  ScrollTrigger.create({
+    animation: tl4,
+    trigger: ".main_cnt_01",
+    start: "top-=200px center",
+    end: "bottom-=100px center",
+    scrub: true,
+    markers: true,
+  })
 
 });
