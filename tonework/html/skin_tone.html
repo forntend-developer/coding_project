@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <script src="/inc/pb_include.js"></script>
+  <script src="../resources/js/pb_include.js"></script>
   <script>include.meta();</script>
   <script>include.favicon();</script>
   <script>include.styles();</script>
@@ -230,21 +230,66 @@
 
   </div>
   <!-- // wrap -->
+  <script rel="preload" src="../resources/js/main_scroll_action.js"></script>
   <script>
     $(document).ready(function (){
       $(window).resize(function(event){
         ww = $(window).width();
+        basepickerM(); // basepicker 모바일 반응형
         quickBtn();
+
+        if (ww > 768) {
+          mainAutoRolling(); // main_cnt_02
+        }
       });
       $(window).scroll(function(event){
         headerAction(); // 헤더 액션
         quickBtn(); // 퀵버튼 위치
       });
+      mySwiper = undefined;
+      basepickerM(); // basepicker 모바일 반응형
+      mainSwiper(); // 스와이퍼 호출
+      mainSnsSwiper(); // SNS Swiper 호출
       headerAction(); // 헤더 인터렉션
-      skinToneColor(); //피부측청      
+      
+      if (ww > 768) {
+        mainAutoRolling(); // main_cnt_02
+      }
+
+      //메인 슬라이드 동영상 자동 재생
+      $('.btn_play').trigger('click');
+
+      //텍스트 흐름
+      if (ww <= 768) {
+        textFlow();
+      }
+      function textFlow() {
+        let boxleft = 0;
+        let listWid = parseFloat($('.flow_text .flow_wrap').outerWidth());
+        let len = parseFloat($('.flow_text .flow_wrap').length);
+        let total = listWid*len;
+
+        console.log(listWid,total)
+        $('.flow_text').css({'width':total});
+        let timer = setInterval(move,15);
+
+        function move(){
+          boxleft -=1;
+          if(boxleft < -listWid){
+            nextlist();
+            boxleft = 0;
+          }
+          $('.flow_text').css({
+            left: boxleft
+          })
+        }
+        function nextlist(){
+          $('.flow_text .flow_wrap').first().appendTo('.flow_text');
+        }
+      } 
+      
     });
   </script>
-
 </body>
 
 </html>

@@ -13,19 +13,25 @@ var include = {
 		document.write('<link rel="stylesheet" href="'+baseURL+'/resources/css/style.css" type="text/css" />');
 		document.write('<link rel="stylesheet" href="'+baseURL+'/resources/css/swiper.min.css" type="text/css" />');
 	},
-	scripts : function(){
-    // library js
-		document.write('<script src="'+baseURL+'/resources/js/lib/jquery-3.6.0.min.js"></script>');
-		document.write('<script src="'+baseURL+'/resources/js/lib/jquery-ui.js"></script>');
-		document.write('<script src="'+baseURL+'/resources/js/lib/swiper.min.js"></script>');
-    document.write('<script src="'+baseURL+'/resources/js/lib/swiper-bundle.js"></script>');
-		//document.write('<script src="'+baseURL+'/resources/js/lib/aos.min.js"></script>');
-		//document.write('<script src="'+baseURL+'/resources/js/lib/scroll-out.min.js"></script>');
-		document.write('<script src="'+baseURL+'/resources/js/lib/gsap.min.js" type="text/javascript"></script>');
-		document.write('<script src="'+baseURL+'/resources/js/lib/ScrollTrigger.min.js" type="text/javascript"></script>');
+  scripts: function () {
+    document.write('<script src="'+baseURL+'/resources/js/jquery-3.6.0.min.js"></script>');
+    document.write('<script src="'+baseURL+'/resources/js/swiper.min.js"></script>');
+    document.write('<script src="'+baseURL+'/resources/js/jquery-ui.min.js"></script>');
+    document.write(
+      '<script src="'+baseURL+'/resources/js/scrollmagic/ScrollMagic.js"></script>'
+    );
+    document.write(
+      '<script src="'+baseURL+'/resources/js/scrollmagic/plugins/debug.addIndicators.js"></script>'
+    );
+    document.write(
+      '<script src="'+baseURL+'/resources/js/scrollmagic/plugins/TweenMax.min.js"></script>'
+    );
+    document.write(
+      '<script src="'+baseURL+'/resources/js/scrollmagic/plugins/animation.gsap.js"></script>'
+    );
     // custom js
-		document.write('<script src="'+baseURL+'/resources/js/common.js"></script>');
-	},
+    document.write('<script src="'+baseURL+'/resources/js/common.js"></script>');
+  },
 	header: function () {
     document.write('<div class="header_wrap">');
     document.write('<div class="logo_wrap">');
@@ -206,10 +212,10 @@ var include = {
     document.write("<!-- footer_logo -->");
     document.write('<div class="footer_logo">');
     document.write(
-      '<img src="/resources/images/common/logo_fotter.svg" alt="">'
+      '<img src="../resources/images/common/logo_fotter.svg" alt="">'
     );
     document.write(
-      '<img class="ico_star" src="/resources/images/icon/icon_34_star@2x.png" alt="">'
+      '<img class="ico_star" src="../resources/images/icon/icon_34_star@2x.png" alt="">'
     );
     document.write("</div>");
     document.write("<!-- // footer_logo -->");

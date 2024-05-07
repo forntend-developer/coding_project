@@ -1,40 +1,1367 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="ko">
 <head>
-<script type="text/javascript" src="../resources/js/pub_include.js"></script>
-<script>include.meta();</script>
-<!-- <script>include.favicon();</script> -->
-<script>include.styles();</script>
-<title>내부프로젝트 - 톤워크 main</title>
+    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+
+<meta name="naver-site-verification" content="2d3f755a92abdd1c3de6fe5c14321d4e14aadd48" />
+<meta name="google-site-verification" content="6bwm2c5vPa1X96wOxKDwqmDlKAiI8aMgmXsp6jvKPEU" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- 네이버 서치어드바이저 -->
+<meta property="og:description" content="안광학 의료기기 전문기업, 광학기술을 기반으로 OCT, 검안기, 렌즈미터, 3D ATI등 취급">
+<meta property="og:title" content="휴비츠" />
+<meta name="description" content="안광학 의료기기 전문기업, 광학기술을 기반으로 OCT, 검안기, 렌즈미터, 3D ATI등 취급">
+<!-- 네이버 서치어드바이저 -->
+
+
+    <title>휴비츠</title>
+
+<!--<title>< ?php echo $g5_head_title; ?></title>-->
+
+    <link rel="stylesheet" href="https://www.huvitz.com/theme/huvitz/css/default.css?ver=240426">
+<link rel="stylesheet" href="https://www.huvitz.com/theme/huvitz/css/style.css?ver=240426">
+<link rel="stylesheet" href="https://www.huvitz.com/theme/huvitz/css/swiper.min.css?ver=240426">
+<link rel="stylesheet" href="https://www.huvitz.com/theme/huvitz/css/animate.css?ver=240426">
+<link rel="stylesheet" href="https://www.huvitz.com/js/font-awesome/css/font-awesome.min.css?ver=240426">
+<link rel="stylesheet" href="https://www.huvitz.com/theme/huvitz/css/main.css?ver=240426">
+    
+<!-- 파비콘 -->
+    <link rel="shortcut icon" href="/theme/huvitz/img/hu_favicon2.ico" type="image/x-icon">
+<!-- 파비콘 -->
+
+<!-- 네이버 서치어드바이저 SNS연동 -->
+<span itemscope="" itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="http://huvitz.com">
+  <a itemprop="sameAs" href="https://www.youtube.com/channel/UCfl_4cFeQZq5iFgrVWkXILQ"></a>
+  <a itemprop="sameAs" href="https://www.instagram.com/huvitz_official"></a>
+  <a itemprop="sameAs" href="https://www.facebook.com/Huvitz"></a>
+  <a itemprop="sameAs" href="https://blog.naver.com/fchuvitz"></a>
+</span>
+<!-- 네이버 서치어드바이저 SNS연동 -->
+
+
+
+    <!--[if lte IE 8]>
+    <script src="https://www.huvitz.com/js/html5.js"></script>
+    <![endif]-->
+
+    <script>
+
+
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = "https://www.huvitz.com";
+        var g5_bbs_url = "https://www.huvitz.com/bbs";
+        var g5_is_member = "";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+    </script>
+            
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119176255-1"></script>
+    
+    <script>
+    window.dataLayer = window.dataLayer || [];
+  
+    function gtag(){dataLayer.push(arguments);}
+  
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-119176255-1');
+    
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.huvitz.com/js/jquery-1.12.4.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/js/jquery-migrate-1.4.1.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/js/jquery.menu.js?ver=240426"></script>
+<script src="https://www.huvitz.com/js/common.js?ver=240426"></script>
+<script src="https://www.huvitz.com/js/wrest.js?ver=240426"></script>
+<script src="https://www.huvitz.com/js/placeholders.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/theme/huvitz/js/swiper-4.5.3.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/theme/huvitz/js/wow.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/theme/huvitz/js/jquery.rwdImageMaps.min.js?ver=240426"></script>
+<script src="https://www.huvitz.com/theme/huvitz/js/design.js?ver=240426"></script>
+<script src="https://www.huvitz.com/theme/huvitz/js/main.js?ver=240426"></script>
 </head>
 <body>
-  <div class="">
 
-  </div>
-  <header>
-    <script>include.header();</script>
-  </header>
-  <main class="countainer">
-    <section class="section section01">
-      <div class="swiper mySwiper3">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+<h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+$(".hd_pops_reject").click(function() {
+    var id = $(this).attr('class').split(' ');
+    var ck_name = id[1];
+    var exp_time = parseInt(id[2]);
+    $("#"+id[1]).css("display", "none");
+    set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+});
+$('.hd_pops_close').click(function() {
+    var idb = $(this).attr('class').split(' ');
+    $('#'+idb[1]).css('display','none');
+});
+$("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 --><div id="wrap" class="main">
+        <!-- 상단 시작 { -->
+    <!-- pc head -->
+    <header id="header" class="pc_head">
+        <h1 class="logo"><a href="https://www.huvitz.com">Huvitz</a></h1>
+        <div class="gnbbox">
+            <ul class="gnb">
+                                        <li >
+                        <a href="/sub/sub1-1.php" target="_self"><span>기업정보</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/sub/sub1-1.php" target="_self">기업소개</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub1-2.php" target="_self">경영철학</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub1-3.php" target="_self">연혁</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub1-4.php" target="_self">오시는 길</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                        <li >
+                        <a href="/sub/sub2.php" target="_self"><span>사업소개</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/sub/sub2.php" target="_self">사업영역</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub2-2.php" target="_self">글로벌 네트워크</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                        <li >
+                        <a href="/sub/sub3-1.php" target="_self"><span>핵심경쟁력</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/sub/sub3-1.php" target="_self">R&D경쟁력</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub3-2.php" target="_self">품질경쟁력</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                        <li >
+                        <a href="/sub/sub4-1.php" target="_self"><span>투자정보</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/sub/sub4-1.php" target="_self">재무정보</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub4-2.php" target="_self">주가정보</a>
+                                </li>
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=NOTICE3" target="_self">공고</a>
+                                </li>
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=NOTICE5" target="_self">공시</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                        <li >
+                        <a href="/bbs/board.php?bo_table=NEWSROOM" target="_self"><span>홍보센터</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=NEWSROOM" target="_self">NEWS ROOM</a>
+                                </li>
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=SNS" target="_self">소통채널</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub5-3.php" target="_self">사회공헌</a>
+                                </li>
+                                                                <li>
+                                    <a href="/sub/sub5-4.php" target="_self">CI</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                        <li >
+                        <a href="/bbs/board.php?bo_table=REFRACTIVE&gr_table=REFRACTIVE|DIAGNOSTIC|EDGING_SOLUTION|SERVER" target="_self"><span>제품정보</span></a>
+                        <ul class="depth">
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=REFRACTIVE&gr_table=REFRACTIVE|DIAGNOSTIC|EDGING_SOLUTION|SERVER" target="_self">안광학 기기</a>
+                                </li>
+                                                                <li>
+                                    <a href="/bbs/board.php?bo_table=lilivis&gr_table=lilivis|3DP|lilivis_scan|lilivis_mill" target="_self">치과용 기기</a>
+                                </li>
+                                                        </ul>
+                    </li>
+                                </ul>
         </div>
-      </div>
-    </section>
-    <section class="section section02">
-      
-    </section>
-  </main>
-  </div>
+        <div class="util">
+            <a href="https://members.huvitz.com/" class="item bg2">HUVITZ MEMBERS</a>
+            <a href="https://www.huvitz.com/intro_main.php" class="item bg">인재채용</a>
+            <div class="item follow">
+                <span class="txt">follow</span>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCfl_4cFeQZq5iFgrVWkXILQ" class="btn youtube" target="_blank">유튜브</a></li>
+                    <li><a href="https://www.instagram.com/huvitz_official" class="btn instagram" target="_blank">인스타그램</a></li>
+                    <li><a href="https://www.facebook.com/Huvitz" class="btn facebook" target="_blank">페이스북</a></li>
+        <li><a href="https://blog.naver.com/fchuvitz" class="btn blog" target="_blank">블로그</a></li>
+                </ul>
+            </div>
+            <div class="item lang">
+                <span class="ico">언어선택</span>
+                <ul>
+                    <li><a href="https://www.huvitz.com/lang.php?lang=KR" class="txt">KOR</a></li>
+                    <li><a href="https://www.huvitz.com/lang.php?lang=EN" class="txt">ENG</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--// pc head -->
+    <a href="http://huvitz.com/bbs/write.php?bo_table=qa" class="btn_quick">
+        <img src="https://www.huvitz.com/theme/huvitz/img/btn_call.png" alt="">
+        <span>문의하기</span>
+    </a>
+    <!-- mobile head -->
+    <header id="mHeader" class="mobile_head">
+        <a href="https://www.huvitz.com" class="m_logo">
+            <img src="https://www.huvitz.com/theme/huvitz/img/m_logo.png" class="default" alt="">
+            <img src="https://www.huvitz.com/theme/huvitz/img/m_logo_white.png" class="opposition" alt="">
+        </a>
+        <div class="lang">
+            <a href="https://www.huvitz.com/lang.php?lang=KR" class="active">KOR</a>
+            <a href="https://www.huvitz.com/lang.php?lang=EN"" >ENG</a>
+        </div>
+        <a href="https://www.huvitz.com/intro_main.php" class="btn_mypage">
+            <img src="https://www.huvitz.com/theme/huvitz/img/ico_person.png" class="default" alt="">
+            <img src="https://www.huvitz.com/theme/huvitz/img/ico_person_black.png" class="opposition" alt="">
+        </a>
+        <a href="#none" class="btn_m_menu">
+            <!-- <div class="sr_only">메뉴</div> -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="m_menu_pop">
+            <div class="bg_menu_texts">
+                <img src="https://www.huvitz.com/theme/huvitz/img/bg_menu_texts.png" class="ani_turn" alt="">
+            </div>
+            <div class="m_menu_right">
+                <div class="m_menu_box">
+                    <ul class="m_menu">
+                                                        <li>
+                                <a href="javascript:;" target="_self"><span>기업정보</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/sub/sub1-1.php" target="_self">기업소개</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub1-2.php" target="_self">경영철학</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub1-3.php" target="_self">연혁</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub1-4.php" target="_self">오시는 길</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                            <li>
+                                <a href="javascript:;" target="_self"><span>사업소개</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/sub/sub2.php" target="_self">사업영역</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub2-2.php" target="_self">글로벌 네트워크</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                            <li>
+                                <a href="javascript:;" target="_self"><span>핵심경쟁력</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/sub/sub3-1.php" target="_self">R&D경쟁력</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub3-2.php" target="_self">품질경쟁력</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                            <li>
+                                <a href="javascript:;" target="_self"><span>투자정보</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/sub/sub4-1.php" target="_self">재무정보</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub4-2.php" target="_self">주가정보</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/bbs/board.php?bo_table=NOTICE3" target="_self">공고</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/bbs/board.php?bo_table=NOTICE5" target="_self">공시</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                            <li>
+                                <a href="javascript:;" target="_self"><span>홍보센터</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/bbs/board.php?bo_table=NEWSROOM" target="_self">NEWS ROOM</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/bbs/board.php?bo_table=SNS" target="_self">소통채널</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub5-3.php" target="_self">사회공헌</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/sub/sub5-4.php" target="_self">CI</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                            <li>
+                                <a href="javascript:;" target="_self"><span>제품정보</span></a>
+                                <ul>
+                                                                                <li>
+                                            <a href="/bbs/board.php?bo_table=REFRACTIVE&gr_table=REFRACTIVE|DIAGNOSTIC|EDGING_SOLUTION|SERVER" target="_self">안광학 기기</a>
+                                        </li>
+                                                                                    <li>
+                                            <a href="/bbs/board.php?bo_table=lilivis&gr_table=lilivis|3DP|lilivis_scan|lilivis_mill" target="_self">치과용 기기</a>
+                                        </li>
+                                                                            </ul>
+                            </li>
+                                                    </ul>
+                </div>
+                <ul class="head_sns head_members">
+                    <li>
+                        <a href="https://members.huvitz.com/">
+                            <img src="https://www.huvitz.com/theme/huvitz/img/m/ico_members.png" alt="MEMBERS">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="head_sns">
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCfl_4cFeQZq5iFgrVWkXILQ">
+                            <img src="https://www.huvitz.com/theme/huvitz/img/m/ico_youtube.png" alt="YOUTUBE">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/huvitz_official">
+                            <img src="https://www.huvitz.com/theme/huvitz/img/m/ico_ins.png" alt="INSTAGRAM">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Huvitz">
+                            <img src="https://www.huvitz.com/theme/huvitz/img/m/ico_fac.png" alt="FACEBOOK">
+                        </a>
+                    </li>
+        <li>
+                        <a href="https://blog.naver.com/fchuvitz">
+                           <img src="https://www.huvitz.com/theme/huvitz/img/m/ico_blog.png" alt="BLOG">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--// mobile head -->
+    <!-- } 상단 끝 -->
+    <!-- 콘텐츠 시작 { -->
+            <div id="container">
+
+<!-- main visual -->
+<div id="scene" class="main_visual" data-relative-input="true">
+    <div class="swiper-container" data-depth='0.2'>
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <div class="imgbox">
+                    <div class="bgimg" style="background-image:url('https://www.huvitz.com/theme/huvitz/img/img_visual01.jpg');"></div>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <div class="imgbox">
+                    <div class="bgimg" style="background-image:url('https://www.huvitz.com/theme/huvitz/img/img_visual02.jpg');"></div>
+                </div>
+            </li>
+            <li class="swiper-slide">
+                <div class="imgbox">
+                    <div class="bgimg" style="background-image:url('https://www.huvitz.com/theme/huvitz/img/img_visual03.jpg');"></div>
+                </div>
+            </li>
+            <!--
+            <li class="swiper-slide">
+                <div class="imgbox">
+                    <div class="bgimg" style="background-image:url('< ?=G5_THEME_IMG_URL?>/img_visual02.jpg');"></div>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+    <div class="bg_circle01" data-depth='0.3'></div>
+    <div class="bg_circle02" data-depth='0.7'></div>
+    <ul class="txtlist">
+        <li>
+            <div class="txtbox">
+                <p class="tit">
+                    <span class="line_of">
+                        <span class="in_late"><em>Re</em>:define</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late"><em>Re</em>:create</span>
+                    </span>
+                </p>
+                <p class="txt">
+                    <span class="line_of">
+                        <span class="in_late">기존의 틀을 벗어나 새로운 관점으로 세상을 봅니다.</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late">변화와 혁신을 통해 새로운 가치를 만들어 갑니다.</span>
+                    </span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="txtbox">
+                <p class="tit">
+                    <span class="line_of">
+                        <span class="in_late"><em>Caring</em> for People</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late"><em>Sharing</em> for Growth</span>
+                    </span>
+                </p>
+                <p class="txt">
+                    <span class="line_of">
+                        <span class="in_late">글로벌 헬스케어 산업을 이끌어가는 대표기업으로</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late">‘함께하는 사회’를 만들어 갑니다.</span>
+                    </span>
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="txtbox">
+                <p class="tit">
+                    <span class="line_of">
+                        <span class="in_late"><em>Better</em> Technology</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late"><em>Better</em> Life</span>
+                    </span>
+                </p>
+                <p class="txt">
+                    <span class="line_of">
+                        <span class="in_late">세계적 수준의 R&D 전문성을 바탕으로</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late">안광학 의료기기의 새로운 패러다임을 제시합니다.</span>
+                    </span>
+                </p>
+            </div>
+        </li>
+        <!--
+        <li>
+            <div class="txtbox">
+                <p class="tit">
+                    <span class="line_of">
+                        <span class="in_late"><em>Re</em>:define</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late"><em>Re</em>:create</span>
+                    </span>
+                </p>
+                <p class="txt">
+                    <span class="line_of">
+                        <span class="in_late">첨단의 복합기술을 근간으로 광전자 정밀기기 사업에서</span>
+                    </span>
+                    <br />
+                    <span class="line_of">
+                        <span class="in_late">세계적으로 가장 존경 받는 기업이 되기 위해 노력하겠습니다.</span>
+                    </span>
+                </p>
+            </div>
+        </li>-->
+    </ul>
+</div>
+<div class="ma_v_pagination">
+    <span class="num_start"></span>
+    <span class="ma_v_bar">
+        <span class="ma_v_bar_var"></span>
+    </span>
+    <span class="num_end"></span>
+    <span class="btn_play_toggle">자동플레이 시작/정지</span>
+</div><!-- parallax  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+</script><!-- parallax end -->
+<script>
+    $(function () {
+        setTimeout(function () {
+            $('.main_visual').addClass('start');
+        }, 1000);
+
+        var swpDelay = 3000;
+        var maVisual = new Swiper('.main_visual .swiper-container', {
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: swpDelay,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.ma_v_pagination',
+                type: 'custom',
+                renderCustom: function (swiper, current, total) {
+                    $('.ma_v_pagination .num_start').html(current);
+                    $('.ma_v_pagination .num_end').html(total);
+                    $('.ma_v_pagination .ma_v_bar .ma_v_bar_var').removeClass('load').width(0);
+                    $('.ma_v_pagination .ma_v_bar .ma_v_bar_var').addClass('load');
+                }
+            },
+            on: {
+                init: function(){
+                    $('.main_visual .txtlist li').removeClass('active');
+                    $('.main_visual .txtlist li').eq(this.realIndex).addClass('active');
+                },
+                slideChange: function (swiper) {
+                    $('.main_visual .txtlist li').removeClass('active');
+                    $('.main_visual .txtlist li').eq(this.realIndex).addClass('active');
+                },
+                autoplayStart: function () {
+                    $('.ma_v_pagination .btn_play_toggle').removeClass('stop');
+                },
+                autoplayStop: function () {
+                    $('.ma_v_pagination .btn_play_toggle').addClass('stop');
+                }
+            },
+        });
+        $('.ma_v_pagination .btn_play_toggle').on('click', function () {
+            if ($(this).hasClass('stop')) {
+                $(this).removeClass('stop');
+                maVisual.autoplay.start();
+            } else {
+                $(this).addClass('stop');
+                maVisual.autoplay.stop();
+            }
+        })
+    });
+</script><!--// main visual --><!-- container -->
+<div id="ma_container">
+    <!-- section -->
+    <div class="sec1 sec_inner">
+        <div class="inner_box">
+            <h1 class="title">Better Life Huvitz</h1>
+            <ul class="ma_icons animated fadeInUp">
+                <li>
+                    <div class="icon">
+                        <svg version="1.2" baseProfile="tiny" id="icon_1"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="130px" height="110px"
+                             viewBox="0 0 130 110" xml:space="preserve">
+            <g>
+                                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="30.0273" y1="92.667" x2="75.125" y2="92.667">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <path fill="none" stroke="url(#SVGID_1_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                M73.125,96.459H32.027v-1.315c0-3.462,2.807-6.269,6.269-6.269h34.829V96.459z"/>
+                                <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="40.2578" y1="48.1523" x2="112.6484" y2="48.1523">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <rect x="45.603" y="33.367" transform="matrix(0.8887 0.4585 -0.4585 0.8887 30.5873 -29.694)" fill="none" stroke="url(#SVGID_2_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="61.699" height="29.571"/>
+                                <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="49.2383" y1="48.1523" x2="103.668" y2="48.1523">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <rect x="55.708" y="33.367" transform="matrix(0.8887 0.4585 -0.4585 0.8887 30.5878 -29.6943)" fill="none" stroke="url(#SVGID_3_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="41.49" height="29.57"/>
+                                <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="53.3232" y1="46.8623" x2="94.585" y2="46.8623">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <rect x="56.021" y="40.987" transform="matrix(0.8887 0.4585 -0.4585 0.8887 29.7155 -28.6905)" fill="none" stroke="url(#SVGID_4_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="35.866" height="11.751"/>
+                                <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="29.2734" y1="19.2485" x2="57.8164" y2="19.2485">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <rect x="31.897" y="15.061" transform="matrix(0.8887 0.4585 -0.4585 0.8887 13.6714 -17.8222)" fill="none" stroke="url(#SVGID_5_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="23.296" height="8.375"/>
+                                <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="24.6177" y1="12.752" x2="37.2891" y2="12.752">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <path fill="none" stroke="url(#SVGID_6_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                M28.523,18.416l-0.777-0.4c-1.022-0.528-1.424-1.784-0.896-2.808l3.728-7.224c0.527-1.022,1.784-1.424,2.807-0.896l0.776,0.4
+                c1.023,0.527,1.424,1.784,0.896,2.807l-3.727,7.225C30.803,18.543,29.546,18.944,28.523,18.416z"/>
+                                <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="67.0469" y1="47.3633" x2="82.8008" y2="47.3633">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <circle fill="none" stroke="url(#SVGID_7_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="74.924" cy="47.363" r="5.876"/>
+                                <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="58.1885" y1="86.7813" x2="106.3262" y2="86.7813">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <path fill="none" stroke="url(#SVGID_8_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+                M104.326,96.459H60.188v-3.356c0-8.835,7.162-15.998,15.998-15.998h23.601c2.507,0,4.539,2.032,4.539,4.538V96.459z"/>
+                                <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="16.7324" y1="100" x2="110.1025" y2="100">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <rect x="18.732" y="96.459" fill="none" stroke="url(#SVGID_9_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="89.37" height="7.081"/>
+                                <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="86.0225" y1="86.7207" x2="99.6895" y2="86.7207">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <circle fill="none" stroke="url(#SVGID_10_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="92.856" cy="86.721" r="4.833"/>
+                                <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="66.7314" y1="88.875" x2="79.5547" y2="88.875">
+                                    <stop  offset="0" style="stop-color:#87C0DC"/>
+                                    <stop  offset="1" style="stop-color:#7AC7C2"/>
+                                </linearGradient>
+
+                                <line fill="none" stroke="url(#SVGID_11_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="68.731" y1="88.875" x2="77.555" y2="88.875"/>
+                            </g>
+          </svg>
+                    </div>
+                    <h2>Philosophy</h2>
+                    <p>
+                        더 좋은 기술로<br />
+                        더 나은 삶을 구현합니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <svg version="1.2" baseProfile="tiny" id="icon_2"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="130px" height="110px"
+                             viewBox="0 0 130 110" overflow="visible" xml:space="preserve">
+          <g>
+                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="72.5439" y1="37.4482" x2="93.8506" y2="37.4482">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_1_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="74.544" y1="29.152" x2="91.851" y2="45.744"/>
+                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="74.5439" y1="29.1523" x2="74.5439" y2="29.1523">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_2_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M74.544,29.152"/>
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="65.1274" y1="20.124" x2="65.1274" y2="20.124">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_3_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M65.127,20.124"/>
+                            <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="19.457" y1="33.5215" x2="67.127" y2="33.5215">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_4_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M28.825,54.989c-9.823-9.821-9.823-25.747-0.001-35.569c9.823-9.822,25.747-9.822,35.569,0l0.734,0.704"/>
+                            <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="63.6069" y1="33.5186" x2="110.542" y2="33.5186">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_5_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M101.175,54.979c9.823-9.821,9.823-25.747,0.001-35.569c-10.326-10.325-26.308-9.262-35.569,0"/>
+                            <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="21.52" y1="56.543" x2="51.9697" y2="56.543">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_6_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M34.655,67.857c-2.547,2.548-6.678,2.547-9.225,0l0,0c-2.547-2.547-2.547-6.677,0-9.224l13.405-13.405
+              c2.548-2.547,6.676-2.546,9.223,0.001l0,0c2.548,2.546,2.549,6.676,0.001,9.224L34.655,67.857z"/>
+                            <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="50.3452" y1="29.8584" x2="78.8838" y2="29.8584">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_7_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M76.884,26.813L63.48,40.218c-2.547,2.548-6.678,2.547-9.225,0l0,0c-2.547-2.547-2.547-6.677,0-9.224L67.66,17.589"/>
+                            <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="30.7412" y1="65.7646" x2="61.1914" y2="65.7646">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_8_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M43.875,77.079c-2.547,2.548-6.676,2.547-9.224,0l0,0c-2.548-2.548-2.548-6.678,0-9.224l13.405-13.406
+              c2.547-2.547,6.676-2.546,9.223,0.002l0,0c2.548,2.546,2.549,6.676,0.001,9.224L43.875,77.079z"/>
+                            <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="39.9624" y1="74.9863" x2="70.4121" y2="74.9863">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_9_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M53.097,86.301c-2.548,2.547-6.678,2.546-9.225,0l0,0c-2.547-2.548-2.547-6.678,0-9.226l13.405-13.404
+              c2.547-2.547,6.676-2.546,9.223,0.001l0,0c2.547,2.546,2.548,6.677,0.001,9.224L53.097,86.301z"/>
+                            <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="49.1841" y1="84.207" x2="79.6328" y2="84.207">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_10_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M62.319,95.521c-2.548,2.547-6.678,2.546-9.225,0l0,0c-2.547-2.547-2.547-6.677,0-9.225l13.405-13.405
+              c2.546-2.547,6.676-2.545,9.223,0.001l0,0c2.547,2.547,2.549,6.677,0.001,9.225L62.319,95.521z"/>
+                            <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="63.0181" y1="71.8457" x2="109.166" y2="71.8457">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_11_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M91.851,45.744l13.405,13.405c2.547,2.547,2.547,6.677,0,9.224c-2.539,2.539-6.65,2.547-9.199,0.023
+              c2.523,2.548,2.518,6.658-0.022,9.198c-2.536,2.535-6.639,2.546-9.188,0.032c2.513,2.55,2.503,6.653-0.032,9.189
+              c-2.536,2.534-6.639,2.545-9.189,0.032c2.513,2.55,2.503,6.653-0.032,9.188c-2.547,2.546-6.677,2.547-9.225,0l-3.349-3.215"/>
+                            <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="64.1851" y1="64.1875" x2="64.1851" y2="64.1875">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_12_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M64.185,64.188"/>
+                            <linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="72.3301" y1="85.1797" x2="79.624" y2="85.1797">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_13_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="77.624" y1="86.849" x2="74.33" y2="83.51"/>
+                            <linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="81.7012" y1="76.125" x2="88.9951" y2="76.125">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_14_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="86.995" y1="77.794" x2="83.701" y2="74.455"/>
+                            <linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="90.9199" y1="66.9063" x2="98.2139" y2="66.9063">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_15_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="96.214" y1="68.575" x2="92.92" y2="65.236"/>
+                        </g>
+          </svg>
+                    </div>
+                    <h2>Mission</h2>
+                    <p>
+                        기술의 ‘가치’에 ‘같이’를<br />
+                        더해 인류 건강에 공헌합니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <svg version="1.2" baseProfile="tiny" id="icon_3"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="130px" height="110px"
+                             viewBox="0 0 130 110" overflow="visible" xml:space="preserve">
+          <g>
+                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="19.7383" y1="55" x2="110.2617" y2="55">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+                            <circle fill="none" stroke="url(#SVGID_1_)" stroke-width="4" stroke-miterlimit="10" cx="65" cy="55" r="43.262"/>
+                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="63.5859" y1="54.9932" x2="86.3486" y2="54.9932">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+                            <path fill="none" stroke="url(#SVGID_2_)" stroke-width="4" stroke-miterlimit="10" d="M65,11.738c0,0,43.535,42.983,0,86.519"/>
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="42.0981" y1="54.9932" x2="64.8613" y2="54.9932">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+                            <path fill="none" stroke="url(#SVGID_3_)" stroke-width="4" stroke-miterlimit="10" d="M63.447,11.738c0,0-43.535,42.983,0,86.519"
+                            />
+                            <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="26.873" y1="34.543" x2="103.1279" y2="34.543">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_4_)" stroke-width="4" stroke-miterlimit="10" x1="26.873" y1="34.543" x2="103.128" y2="34.543"/>
+                            <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="21.7383" y1="55" x2="108.2617" y2="55">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+                            <line fill="none" stroke="url(#SVGID_5_)" stroke-width="4" stroke-miterlimit="10" x1="21.738" y1="55" x2="108.262" y2="55"/>
+                            <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="26.873" y1="75.457" x2="103.1279" y2="75.457">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_6_)" stroke-width="4" stroke-miterlimit="10" x1="26.873" y1="75.457" x2="103.128" y2="75.457"/>
+                        </g>
+          </svg>
+                    </div>
+                    <h2>Vision</h2>
+                    <p>
+                        기술 기반의 글로벌 광학전문<br />
+                        강소기업 휴비츠입니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="icon">
+                        <svg version="1.2" baseProfile="tiny" id="icon_4"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="130px" height="110px"
+                             viewBox="0 0 130 110" overflow="visible" xml:space="preserve">
+          <g>
+                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="70.9414" y1="12.5649" x2="99.2285" y2="12.5649">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_1_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="72.941" y1="15.647" x2="97.229" y2="9.482"/>
+                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="72.9414" y1="15.6475" x2="72.9414" y2="15.6475">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_2_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M72.941,15.647"/>
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="57.6958" y1="19.5186" x2="57.6958" y2="19.5186">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_3_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M57.696,19.519"/>
+                            <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="31.0923" y1="22.6411" x2="59.6958" y2="22.6411">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_4_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="33.092" y1="25.764" x2="57.696" y2="19.519"/>
+                            <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="14.437" y1="43.4233" x2="50.6255" y2="43.4233">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <polyline fill="none" stroke="url(#SVGID_5_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+              16.437,60.287 33.064,25.956 48.625,60.891 	"/>
+                            <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="30.5317" y1="100.4219" x2="99.2285" y2="100.4219">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_6_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="32.532" y1="100.422" x2="97.229" y2="100.422"/>
+                            <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="63.1606" y1="54.7993" x2="67.1602" y2="54.7993">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <line fill="none" stroke="url(#SVGID_7_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="65.161" y1="25.956" x2="65.161" y2="83.643"/>
+                            <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="13.7573" y1="69.3281" x2="51.5073" y2="69.3281">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_8_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M49.507,60.891c0,9.32-7.556,16.875-16.875,16.875s-16.875-7.555-16.875-16.875H49.507z"/>
+                            <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="79.1719" y1="26.9497" x2="115.3613" y2="26.9497">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <polyline fill="none" stroke="url(#SVGID_9_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+              81.172,43.813 97.799,9.482 113.361,44.417 	"/>
+                            <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="78.4922" y1="52.8545" x2="116.2422" y2="52.8545">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_10_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M114.242,44.417c0,9.32-7.555,16.875-16.875,16.875c-9.318,0-16.875-7.555-16.875-16.875H114.242z"/>
+                            <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="46.0054" y1="92.0801" x2="83.7559" y2="92.0801">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_11_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M48.005,100.518c0-9.32,7.556-16.875,16.875-16.875c9.319,0,16.875,7.555,16.875,16.875H48.005z"/>
+                            <linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="55.563" y1="18.043" x2="74.7617" y2="18.043">
+                                <stop  offset="0" style="stop-color:#7DB8CB"/>
+                                <stop  offset="1" style="stop-color:#3CC7C2"/>
+                            </linearGradient>
+
+                            <path fill="none" stroke="url(#SVGID_12_)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+              M57.717,19.575c-0.102-0.495-0.154-1.008-0.154-1.532c0-4.197,3.402-7.6,7.599-7.6c4.198,0,7.6,3.402,7.6,7.6s-3.402,7.6-7.6,7.6
+              C61.491,25.643,58.426,23.038,57.717,19.575"/>
+                        </g>
+          </svg>
+                    </div>
+                    <h2>Core Value</h2>
+                    <p>
+                        휴비츠의 핵심가치는<br />
+                        동반성장과 신뢰입니다.
+                    </p>
+                </li>
+            </ul>
+            <div class="btn_center">
+                <a href="https://www.huvitz.com/sub/sub1-2.php" class="btn_more on">
+                    <span class="icon_more">
+                        <svg viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><path d="m14.1296296 7.97680312-1.5558472-1.51578947-3.46456689 3.41052631v-10.87894737h-2.18139399v10.87894737l-3.46456693-3.41052631-1.55584718 1.51578947 6.11111111 6.01578948z" fill="#fff" fill-rule="evenodd" transform="matrix(0 1 1 0 1.525926 -1.525926)"></path></svg>
+                        <em>more</em>
+                    </span>
+                    <span class="txt">more</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- product -->
+    <div class="sec2 sec_inner">
+        <div class="inner_box">
+            <h1 class="title">Product</h1>
+            <div class="main_vod_box">
+                <ul class="main_vod_list">
+                    <li class="active">
+                        <iframe src="https://www.youtube.com/embed/k7lmuG0_fRE" data-src="https://www.youtube.com/embed/k7lmuG0_fRE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="" data-src="https://www.youtube.com/embed/4CndJ7HyOro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="" data-src="https://www.youtube.com/embed/vVatU7qVS7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <iframe src="" data-src="https://www.youtube.com/embed/0yZUFRhwavY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ul>
+                <!--
+                <div class="btn_center mobile">
+                    <a href="#" class="btn_more on">
+                        <span class="icon_more">
+                            <svg viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><path d="m14.1296296 7.97680312-1.5558472-1.51578947-3.46456689 3.41052631v-10.87894737h-2.18139399v10.87894737l-3.46456693-3.41052631-1.55584718 1.51578947 6.11111111 6.01578948z" fill="#fff" fill-rule="evenodd" transform="matrix(0 1 1 0 1.525926 -1.525926)"></path></svg>
+                            <em>more</em>
+                        </span>
+                        <span class="txt">more</span>
+                    </a>
+                </div>
+                -->
+                <div id="vod" class="vodbar">
+                    <span class="active">
+                        <i></i>
+                        <strong>HPE-8000X</strong>
+                    </span>
+                    <span>
+                        <i></i>
+                        <strong>HOCT-1/1F</strong>
+                    </span>
+                    <span>
+                        <i></i>
+                        <strong>HRK-9000A</strong>
+                    </span>
+                    <span>
+                        <i></i>
+                        <strong>HPE-910</strong>
+                    </span>
+                    <div class="progress_bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="sec2_back"></div>
+    </div>
+    <!-- product end -->
+    <!-- news -->
+
+    <div class="sec3 sec_inner">
+        <div class="inner_box">
+            <h1 class="title">News</h1>
+            <div class="main_news">
+                <div class="swiper-container">
+
+                    <ul class="swiper-wrapper">
+                                                                                    <li class="swiper-slide item">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NEWSROOM&amp;wr_id=36">
+                                    <div class="sw_item">
+                                        <div class="img">
+                    <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/NEWSROOM/3543480699_ZQBXUrtx_24e47139c0e04c3ed85f697bb80446b11c43b466.jpg')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>NEWSROOM</h2>
+                                                <span>2024-02-23</span>
+                                            </div>
+                                            <p>휴비츠, 한국실명예방재단과 취약계층 눈 수술비 지원 업무협약 체결</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NEWSROOM&amp;wr_id=34">
+                                    <div class="sw_item">
+                                        <div class="img">
+                    <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/NEWSROOM/3543480698_5y9RwrEC_0df65e5d8b7e0908c3ae1e7e9d45f9464609297f.jpg')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>NEWSROOM</h2>
+                                                <span>2024-02-23</span>
+                                            </div>
+                                            <p>휴비츠,  대구지사 설립… 대구·경북 지역 직판 개시</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NEWSROOM&amp;wr_id=33">
+                                    <div class="sw_item">
+                                        <div class="img">
+                    <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/NEWSROOM/3543480698_nZKEcLU8_f2c8ab36c60cda2f3120bc4702d4ee64e52052b0.jpg')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>NEWSROOM</h2>
+                                                <span>2024-02-23</span>
+                                            </div>
+                                            <p>휴비츠, 광학식 바이오메트리 ‘HBM-1’ 출시</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                                                                                <li class="swiper-slide item">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NOTICE3&amp;wr_id=14">
+                                    <div class="sw_item">
+                                        <div class="img bg03">
+                                            <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/NOTICE3/3543480697_MImjpnBK_00a87a9083744a191d0c87b9cf343ed6b4aa5a22.pdf')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>주주총회</h2>
+                                                <span>2024-03-23</span>
+                                            </div>
+                                            <p>제25기 사업보고서</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NOTICE3&amp;wr_id=13">
+                                    <div class="sw_item">
+                                        <div class="img bg01">
+                                            <div class="bg_img" style="background-image:url('/')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>공지</h2>
+                                                <span>2024-03-16</span>
+                                            </div>
+                                            <p>외부감사인 선임공고</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=NOTICE3&amp;wr_id=12">
+                                    <div class="sw_item">
+                                        <div class="img bg02">
+                                            <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/NOTICE3/3543480697_cumi8pgY_887703298faec1436a69137dbddf01449fd9d14e.pdf')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>IR행사자료</h2>
+                                                <span>2023-04-05</span>
+                                            </div>
+                                            <p>IR자료(2023년)</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                                                                                <li class="swiper-slide item">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=SNS&amp;wr_id=301">
+                                    <div class="sw_item">
+                                        <div class="img">
+                                            <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/SNS/3543480698_T4JtUuMI_ba1f591b2bad53d537a6f1a15666cb4ef2520771.png')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>INSTAGRAM</h2>
+                                                <span>2024-04-26</span>
+                                            </div>
+                                            <p>마트한 진료의 시작 휴비츠의 통합 솔루션으로 경험해보세요.</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=SNS&amp;wr_id=288">
+                                    <div class="sw_item">
+                                        <div class="img">
+                                            <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/SNS/3543480698_xan21MOJ_6b12818b4896fa62d27c490283705ff4f227f3a8.png')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>INSTAGRAM</h2>
+                                                <span>2024-04-19</span>
+                                            </div>
+                                            <p>눈 건강 무엇이든 물어보세요! 휴비츠가 알려주는 눈 건강 FAQ</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                        <li class="swiper-slide ">
+                                <a href="https://www.huvitz.com/bbs/board.php?bo_table=SNS&amp;wr_id=287">
+                                    <div class="sw_item">
+                                        <div class="img">
+                                            <div class="bg_img" style="background-image:url('https://www.huvitz.com/data/file/SNS/3543480698_FBVimbwZ_0bacee355e264238a8ced44cea48cee6419ff47b.png')"></div>
+                                        </div>
+                                        <div class="cont">
+                                            <div class="cont_top">
+                                                <h2>INSTAGRAM</h2>
+                                                <span>2024-04-15</span>
+                                            </div>
+                                            <p>건강한 직원이 건강한 회사를 만든다. 휴비츠의 건강 관리 프로그램</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                                                </ul>
+                </div>
+            </div>
+        </div>
+        <div id="news_bar" class="vodbar col3">
+            <span class="active">
+                <i></i>
+                <strong>NEWS ROOM</strong>
+            </span>
+            <span>
+                <i></i>
+                <strong>공고</strong>
+            </span>
+            <span>
+                <i></i>
+                <strong>소통채널</strong>
+            </span>
+            <div class="progress_bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+
+            var mySwiper = new Swiper('.main_news .swiper-container',{
+                autoplay:{
+                    delay:2000,
+        disableOnInteraction: false,
+                },
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                loop:true,
+                pagination: {
+                    el: '#news_bar .progress_bar',
+                    type: 'custom',
+                    renderCustom: function (swiper, current, total) {
+                        var pct = (current)/(total-3)*100 + '%';
+                        $('#news_bar .progress_bar .progress').width(pct);
+                        //console.log(pct)
+                        var group = (current-1) / 3
+                        if( current <= 3){
+                            $('#news_bar > span').removeClass('active');
+                            $('#news_bar > span').eq(0).addClass('active')
+                        }
+                        else if( current > 3 && current <= 6 ){
+                            $('#news_bar > span').removeClass('active');
+                            $('#news_bar > span').eq(1).addClass('active')
+                        }
+                        else if( current > 6 && current <= 9){
+                            $('#news_bar > span').removeClass('active');
+                            $('#news_bar > span').eq(2).addClass('active')
+                        }
+
+                    }
+                },
+                on: {
+                    init: function(swiper){
+                        $('#news_bar > span').on('click',function(){
+                            $('#news_bar > span').removeClass('active');
+                            $(this).addClass('active')
+                            mySwiper.slideToLoop($(this).index()*3);
+                        })
+                    },
+                },
+
+            });
+
+        });
+    </script>
+    <!-- news end -->
+
+    <!-- recruit -->
+    <div class="sec4 sec_inner">
+        <div class="inner_box">
+            <div class="bottom_ani_box">
+                <h1 class="title">Recruit</h1>
+                <p>
+                    도전과 열정을 갖춘 당신은 휴비츠의 미래입니다. <br />
+                    눈 건강의 미래를 함께 만들어갈 여러분의 지원을 기다립니다.
+                </p>
+                <div class="btn_center">
+                    <a href="https://www.huvitz.com/intro_main.php" class="btn_more on">
+                        <span class="icon_more">
+                            <svg viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><path d="m14.1296296 7.97680312-1.5558472-1.51578947-3.46456689 3.41052631v-10.87894737h-2.18139399v10.87894737l-3.46456693-3.41052631-1.55584718 1.51578947 6.11111111 6.01578948z" fill="#fff" fill-rule="evenodd" transform="matrix(0 1 1 0 1.525926 -1.525926)"></path></svg>
+                            <em>more</em>
+                        </span>
+                        <span class="txt">more</span>
+                    </a>
+                </div>
+                <div class="circular circular01"></div>
+                <div class="circular circular02"></div>
+                <div class="circular circular03"></div>
+                <div class="circular circular04"></div>
+                <div class="circular circular05"></div>
+                <div class="person01"><img src="https://www.huvitz.com/theme/huvitz/img/person01.png" alt=""></div>
+                <div class="person02"><img src="https://www.huvitz.com/theme/huvitz/img/person02.jpg" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- recruit end -->
+</div>
+<!--// container -->
+</div>
+<!-- } 콘텐츠 끝 -->
+<!-- 하단 시작 { -->
+<!-- foot -->
+<footer id="footer">
+    <div class="foot_con">
+  <!--
+        <a href="#" class="btn_top">-->
+            <!-- <img src="./images/btn_top.png" alt="TOP"> -->
+  <!--
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+            </svg>
+        </a>
+  -->
+  
+        <div class="foot_link_inner">
+            <ul class="foot_link_left">
+                <li>
+                    <a href="https://www.huvitz.com/sub/sub1-1.php">기업정보</a>
+                </li>
+                <li>
+                    <a href="https://www.huvitz.com/sub/sub2.php">사업영역</a>
+                </li>
+                <li>
+                    <a href="https://www.huvitz.com/sub/sub3-1.php">핵심경쟁력</a>
+                </li>
+                <li>
+                    <a href="https://www.huvitz.com/sub/sub4-1.php">투자정보</a>
+                </li>
+                <li>
+                    <a href="https://www.huvitz.com/bbs/board.php?bo_table=NEWSROOM">홍보센터</a>
+                </li>
+                <li>
+                    <a href="https://www.huvitz.com/bbs/board.php?bo_table=REFRACTIVE&gr_table=REFRACTIVE|DIAGNOSTIC|EDGING_SOLUTION">제품정보</a>
+                </li>
+            </ul>
+            <div class="foot_link_right">
+                <div>
+                    <a href="https://www.huvitz.com/sub/privacy.php">개인정보 취급방침</a>
+                    <i></i>
+                    <a href="https://www.huvitz.com/sub/terms.php">이용약관</a>
+                </div>
+
+
+                                        <a href="https://www.huvitz.com/bbs/login.php">LOGIN</a>
+                                </div>
+            <p class="copyright mobile">Copyright 2021 Huvitz Corp. All rights reserved
+                <a href="#none" class="ua">ADMIN</a></p>
+        </div>
+  
+    
+        <address class="foot_addr">㈜휴비츠 | 경기도 안양시 동안구 부림로 170번길 38 | 사업자등록번호. 123-81-48801 |
+            <a href="tel:031-428-9100" class="ua">T. 031-428-9100</a></address>
+        <address class="foot_addr">F. 031-477-8617(영업,관리) | 031-477-8619(R&D) <i>|</i>
+            <br />031-477-8616(자재) | 031-477-8618(공장)
+        </address>
+    
+  <div class="sns">
+    <a href="https://www.youtube.com/channel/UCfl_4cFeQZq5iFgrVWkXILQ" target="_blank"><img src="https://www.huvitz.com/theme/huvitz/img/btn_util_youtube.png" alt="YOUTUBE"></a>
+    <a href="https://www.instagram.com/huvitz_official" target="_blank"><img src="https://www.huvitz.com/theme/huvitz/img/btn_util_instagram.png" alt="INSTAGRAM"></a>
+    <a href="https://www.facebook.com/Huvitz" target="_blank"><img src="https://www.huvitz.com/theme/huvitz/img/btn_util_facebook.png" alt="FACEBOOK"></a>
+    <a href="https://blog.naver.com/fchuvitz" target="_blank"><img src="https://www.huvitz.com/theme/huvitz/img/btn_util_blog.png" alt="BLOG"></a>
+  </div>		
+    
+    
+        <p class="copyright">Copyright 2021 Huvitz Corp. All rights reserved
+          <!--<a href="< ?=G5_URL?>/adm" class="ua">ADMIN</a>-->
+            <a href="/bbs/login.php?url=../../index.php" class="ua"><span>ADMIN</span></a>
+                  </p>
+    </div>
+</footer><!--// foot end -->
+<!-- } 하단 끝 --></div>
+<script>
+    $(function () {
+        // 폰트 리사이즈 쿠키있으면 실행
+        font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+    });
+</script>
+
+<script>
+    $(function(){
+        new WOW().init();
+    });
+</script>
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+var $sv_use = $(".sv_use");
+var count = $sv_use.length;
+
+$sv_use.each(function() {
+    $(this).css("z-index", count);
+    $(this).css("position", "relative");
+    count = count - 1;
+});
+});
+</script>
+<![endif]-->
+
+
 </body>
-<script>include.scripts();</script>
 </html>

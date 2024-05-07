@@ -171,7 +171,7 @@ header .logo svg {vertical-align:top;width:100%}
 .main_top_about .text_box dt {font-family:"sans-serif";font-size:2.2rem;line-height:3.2rem;font-weight:600;color:#fff;}
 .main_top_about .text_box dd {margin-top:15px;font-size:2.2rem;line-height:3.2rem;font-weight:600;color:#fff;}
 .main_top_about .btn_box {width:215px;height:64px;border:1px solid #1C1C1B;border-radius:32px;position:absolute;bottom:80px;left:105px;font-size:0;}
-.main_top_about .btn_box_inner {display:inline-block;width:215px;padding:18px 40px;margin:-6px 0 0 -6px;height:64px;position:relative;border:1px solid #1C1C1B;border-radius:32px;background-color:#fff}
+.main_top_about .btn_box_inner {display:inline-block;width:215px;/*padding:18px 40px;*/margin:-6px 0 0 -6px;height:64px;position:relative;border:1px solid #1C1C1B;border-radius:32px;background-color:#fff}
 .main_top_about .btn_box_inner:after {display:block;content:"";width:16px;height:16px;position:absolute;top:50%;right:24px;transform:translateY(-50%);background:url(../images/icon/ico_16_arrow_right.svg) no-repeat center;background-size:16px;transition:all .3s}
 .main_top_about .btn_box_inner > a {z-index:10;position:absolute;top:0;left:0;right:0;bottom:0}
 .main_top_about .btn_box_inner > span {display:block;transform:translateX(0%);transition:transform .3s}
@@ -234,7 +234,7 @@ header .logo svg {vertical-align:top;width:100%}
 .basepicker_about .about_cnt > p {font-size:2rem;line-height:3.2rem;font-weight:700;color:#1C1C1B}
 .basepicker_about .about_cnt > p + p {margin-top:24px}
 .basepicker_about .btn_box {margin-top:32px;width:215px;height:64px;border:1px solid #1C1C1B;border-radius:32px;font-size:0;}
-.basepicker_about .btn_box_inner {display:inline-block;width:215px;padding:18px 40px;margin:-6px 0 0 -6px;height:64px;position:relative;border:1px solid #1C1C1B;border-radius:32px;background-color:#fff}
+.basepicker_about .btn_box_inner {display:inline-block;width:215px;/*padding:18px 40px;*/margin:-6px 0 0 -6px;height:64px;position:relative;border:1px solid #1C1C1B;border-radius:32px;background-color:#fff}
 .basepicker_about .btn_box_inner:after {display:block;content:"";width:16px;height:16px;position:absolute;top:50%;right:24px;transform:translateY(-50%);background:url(../images/icon/ico_16_arrow_right.svg) no-repeat center;background-size:16px;transition:all .3s}
 .basepicker_about .btn_box_inner > a {z-index:10;position:absolute;top:0;left:0;right:0;bottom:0}
 .basepicker_about .btn_box_inner > span {display:block;transform:translateX(0%);transition:transform .3s}
@@ -246,7 +246,7 @@ header .logo svg {vertical-align:top;width:100%}
 
 /* flow_text */
 .flow_container {padding-bottom:152px}
-.flow_text {display:flex;flex: 0 0 auto;white-space:nowrap;overflow:hidden;height:14.9rem;vertical-align:top;transition:0.3s;font-family:"sans-serif";font-size:18rem;line-height:15.8rem;font-weight:600;color:#1C1C1B;}
+.flow_text {display:flex;flex: 0 0 auto;white-space:nowrap;overflow:hidden;height:14.9rem;vertical-align:top;transition:0.3s;font-family:"sans-serif";font-size:18rem;line-height:12.8rem;font-weight:600;color:#1C1C1B;}
 .flow_text span {-webkit-text-stroke: 1px #1C1C1B;-webkit-text-stroke-width:1px;-webkit-text-stroke-color:#1C1C1B;font-family:"sans-serif";vertical-align:top;color:#fff}
 .flow_text i {display:inline-block;width:74px;height:14.9rem;vertical-align:top;background:url("../images/icon/ico_26_star.svg") no-repeat center;background-size:26px}
 .flow_text:hover .flow-wrap {animation-play-state:paused;cursor:pointer;}
@@ -332,7 +332,7 @@ header .logo svg {vertical-align:top;width:100%}
 .skin_finder .img_cnt .btn_box_inner a:hover ~ .btn_box_bg:after {top:0}
 .skin_finder .img_cnt .btn_box_inner a:hover ~ .btn_box_text p {color:#fff}
 .skin_finder .img_cnt .btn_box_inner .btn_box_bg {overflow:hidden;position:relative;width:100%;height:100%;border-radius:100%}
-.skin_finder .img_cnt .btn_box_text {z-index:10;overflow:hidden;width:100%;height:26px;text-align:center;position:absolute;top:50%;transform:translateY(-50%);}
+.skin_finder .img_cnt .btn_box_text {z-index:10;overflow:hidden;width:100%;height:26px;text-align:center;position:absolute;top:50%;transform:translateY(-50%);left:0;}
 .skin_finder .img_cnt .btn_box_text p {opacity:0;width:100%;position:absolute;top:0;font-family:"sans-serif";font-size:1.8rem;line-height:2.6rem;font-weight:600;color:#1C1C1B;transition:all .5s;}
 .skin_finder .img_cnt .btn_box_text .text_br {display:inline}
 .skin_finder .img_cnt .btn_box_text p + p{opacity:1;}
