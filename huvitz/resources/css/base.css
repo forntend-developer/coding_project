@@ -1,0 +1,144 @@
+/* Reset */
+body, h1, h2, h3, h4, h5, h6,
+div, p, pre, address,
+ul, ol, li, dl, dt, dd,
+table, caption, th, td,
+form, fieldset, legend,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+table {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+address, caption, em {
+  font-style: normal;
+  font-weight: 400;
+}
+
+input, select, button, textarea {
+  color: #373737;
+  font-size: 100%;
+  font-family: 'NEXONLv2Gothic', sans-serif;
+  vertical-align: middle;
+}
+
+/* Base */
+body {
+  color: #373737;
+  font-size: 16px;
+  line-height: 1.375;
+  font-weight: 400;
+  font-family: 'NEXONLv2Gothic', sans-serif;
+}
+
+hr {
+  display: none;
+}
+
+caption, legend,
+#skipNavi {
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+a {
+  color: #373737;
+  text-decoration: none;
+}
+
+a:focus, a:hover, a:active {
+  color: #373737;
+}
+
+input.text,
+textarea.textarea {
+  margin: 0;
+  border: 1px solid #000;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+textarea, pre {
+  overflow: auto;
+  appearance: none;
+  resize: none;
+}
+
+.hide {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+fieldset {
+  display: block;
+}
+
+.button {
+  border-radius: 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+/*html5*/
+article, aside, dialog, footer, header, section, nav, figure, menu {
+  display: block;
+}
+
+
+/*팝업 (모바일)*/
+@media (max-width: 800px) {
+#hd_pop { background: #fff; }
+.hd_pops { left: 20px !important; right: 20px !important;  background: #fff; }
+.hd_pops:nth-child(2) { top: 450px!important; }
+.hd_pops_con { width: 100% !important; height: auto !important; background: #fff; }
+.hd_pops_con img { width: 100% !important; height: auto !important; }
+} 
+/*//팝업 (모바일)*/

@@ -1,375 +1,446 @@
 
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>바이리즌 스킨부스터(BYRYZN SKINBOOSTER)</title>
-    <meta name="description" content="바이리즌을 선택해야 하는 이유. 단 한번이라도 안전하게, 만족스럽게" />
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/gbc3xuf.css" />
-    <link rel="stylesheet" href="../resources/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/style_test231030.css" /> -->
-    <link rel="stylesheet" href="../resources/css/slick-theme.css" />
-    <link rel="stylesheet" href="../resources/css/slick.css" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.byryzn.com" />
-    <meta property="og:title" content="바이리즌 스킨부스터(BYRYZN SKINBOOSTER)" />
-    <meta property="og:image" content="assets/meta/meta_byryzn.png" />
-    <meta property="og:description" content="바이리즌을 선택해야 하는 이유. 단 한번이라도 안전하게, 만족스럽게" />
-    <meta property="og:site_name" content="바이리즌 스킨부스터(BYRYZN SKINBOOSTER)" />
+<!DOCTYPE html>
+<html lang="ko">  <!-- 영문 en -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- minimum-scale=1 : 최소 크기 설정 (기본값 : 0.25, 범위 : 0~10.0), maximum-scale=1 : 최대 크기 설정(최대 배율 범위 : 0~10.0), user-scalable=no : 사용자 단말의 확대기능 사용 유무 선언(yes/no) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0">
+		<!-- 모바일 사파리에서 전화번호 링크 비활성화 -->
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>바이리즌 스킨부스터(BYRYZN SKINBOOSTER)</title>
+
+		<!-- S: 공유 및 SEO -->
+		<!-- <meta name="keywords" content="HTML, CSS, JavaScript 키워드 요청해서 변경"> -->
+		<meta name="description" content="바이리즌을 선택해야 하는 이유. 단 한번이라도 안전하게, 만족스럽게">
+		<meta property="og:type" content="website">
+		<meta property="og:locale" content="ko_KR">
+		<meta property="og:site_name" content="바이리즌 스킨부스터(BYRYZN SKINBOOSTER)">
+		<meta property="og:title" content="바이리즌 스킨부스터(BYRYZN SKINBOOSTER)">
+		<meta property="og:description" content="바이리즌을 선택해야 하는 이유. 단 한번이라도 안전하게, 만족스럽게">
+		<meta property="og:url" content="https://byryzn.co.kr/">
+		<meta property="og:image" content="./assets/common/images/thumbnail.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<!-- E: 공유 및 SEO -->
+
+		<!-- Chrome, Safari, IE -->
+		<link rel="shortcut icon" href="https://byryzn.co.kr/assets/common/images/favicon.svg" type="image/svg+xml" />
+		<link rel="shortcut icon" href="https://byryzn.co.kr/assets/common/images/favicon.png" type="image/x-icon">
+		<!-- Firefox, Opera -->
+		<link rel="icon" href="https://byryzn.co.kr/assets/images/common/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="https://byryzn.co.kr/assets/images/common/favicon.png" type="image/x-icon">
+		<!-- E: favicon and icon -->
+
+		<!-- S: CDN style -->
+		
+		<!-- E: CDN style -->
+
+		<!-- S: local style -->
+		<!-- reset/common -->
     
-    <script src="../resources/js/lib/jquery-3.6.0.min.js"></script>
-    <script src="../resources/js/lib/jquery-ui.js"></script>
-    <script src="../resources/js/lib/smooth-scrollbar.js"></script>
-    <script src="../resources/js/lib/gsap.min.js"></script>
-    <script src="../resources/js/lib/ScrollToPlugin.min.js"></script>
-    <script src="../resources/js/lib/ScrollTrigger.min.js"></script>
-    <script src="../resources/js/lib/slick.min.js"></script>
-    <script src="../resources/js/common.js"></script>
-    <!-- <script src="../assets/js/script_test231030.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7C3GWJ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-    <!-- End Google Tag Manager (noscript) -->
+    <link rel="stylesheet" type="text/css" href="../resources/css/reset.css">
+		<!-- layout -->
+		<link rel="stylesheet" href="../resources/css/style.css">
+		<!-- E: local style -->
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQFHC68" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <div id="loading" style="display: none">
-      <div class="loading_text">
-        <img src="../resources/images/main/loading_text.svg" alt="New Generation Skinbooster" />
-      </div>
-      <div class="progress" id="progress_div">
-        <div class="bar" id="bar1"></div>
-        <div class="percent" id="percent1"></div>
-      </div>
-      <input type="hidden" id="progress_width" value="0" />
-    </div>
-    <div id="byRyzn">
-      <div class="noScroll"></div>
-      <div id="header">
-        <div class="header_wrap">
-          <p class="logo">
-            <img src="../resources/images/main/logo.svg" alt="logo" />
-          </p>
-        </div>
-      </div>
-      <div id="goTop">
-        <a href="javascript:void(0);" class="go_top">
-          <img src="../resources/images/main/go_top.png" alt="top" />
+		<!-- S: local script -->
+		<script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/jquery-1.11.1.min.js"></script>
+	  <script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/gsap.min.js"></script>
+		<script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/ScrollTrigger.min.js"></script>
+		<script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/smooth-scrollbar.js"></script>
+    <script type="text/javascript" src="https://byryzn.co.kr/assets/js/script.js"></script>
+    <script type="text/javascript" src="https://byryzn.co.kr/assets/common/js/dataDown.js"></script>
+    <script type="text/javascript" src="https://byryzn.co.kr/index.js"></script>
+		<!-- E: local script -->
+	</head>
+	<body>
+    <div id="wrapper">
+			<div class="noScroll"></div>
+			<header id="header" class="hidden">
+				<ul class="gnb">
+					<li class="on"><a href="#sec01Scroll">BRAND</a></li>
+					<li><a href="#sec03scroll">CLINICAL DATA</a></li>
+					<li><a href="#sec04">PRODUCT</a></li>
+					<li><a href="#sec07">DOWNLOAD</a></li>
+				</ul>
+			</header>
+			<div class="goTop">
+				<a href="javascirpt:void(0);">
+					<img src="https://byryzn.co.kr/assets/images/topIcon.svg" alt="위에 화살표 아이콘">
+				</a>
+			</div>
+			<div id="FloatingBtn" class="on">
+        <a href="#sec07" class="FloatingBtn">
+          <img src="https://byryzn.co.kr/assets/images/floatingBanner.png" alt="병원 전용 마케팅 자료 다운로드"/>
         </a>
       </div>
-      <div id="FloatingBtn" class="on">
-        <a href="javascript:void(0);" class="FloatingBtn pop_open">
-          <img src="../resources/images/main/Floating.png" alt="병원찾기" />
-        </a>
-      </div>
-      <div id="scrollCont">
-        <div class="panel">
-          <div class="panel_test">
-            <div id="kvBox" class="section">
-              <div class="sec_wrap">
-                <div class="bg_video">
-                  <div class="video_box">
-                    <video loop muted preload="auto">
-                      <source src="../assets/video/@hugel_main_bg_pc.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="kv_tit">
-                    <div class="pretendard fw_700 big_font mb_40">
-                      <p class="kv_txt1 kv_txt">선택의 이유,&nbsp;</p>
-                      <p class="kv_txt2 kv_txt">바이리즌</p>
-                    </div>
-                    <div class="poppins fw_500 kv_txt kv_txt3">
-                      New Generation Skinbooster
-                    </div>
-                  </div>
-                  <div class="scroll on">
-                    <div class="scroll_ico">
-                      <p class="scroll_ico_txt poppins fw_500">Scroll</p>
-                      <p class="scroll_ico_img">
-                        <img src="../resources/images/main/scroll.svg" alt="scroll" />
-                        <span class="scroll_move"><img src="../resources/images/main/scroll_wheel.svg" alt="scroll_wheel"/></span>
-                      </p>
-                    </div>
-                  </div>
+			<div id="scrollCont" class="main">
+				<div class="container">
+					<section id="secMain" class="secMain">
+						<div class="contWrap">
+							<div class="sound on">
+								<a href="javascript:void(0);">
+									<img src="https://byryzn.co.kr/assets/images/soundOff.svg" alt="사운드 아이콘">
+								</a>
+							</div>
+              <div class="videoWrap">
+                <div class="videoBox"> 
+                  <video loop muted autoplay class="video01">
+                    <source src="https://byryzn.co.kr/assets/video/mainKv.mp4" type="video/mp4"/>
+                  </video>
                 </div>
               </div>
+							<div class="scroll on">
+								<div class="scrollTxt">
+									<p class="fw_500 poppins">Scroll</p>
+								</div>
+								<div class="scrollBox">
+									<img src="https://byryzn.co.kr/assets/images/scroll.svg" alt="마우스 테두리 아이콘">
+									<span class="scrollWheel">
+										<img src="https://byryzn.co.kr/assets/images/scroll_wheel.svg" alt="마우스 휠 아이콘">
+									</span>
+								</div>
+							</div>
             </div>
-            <div id="sec01" class="section">
-              <div class="sec_wrap">
-                <div class="top_text">
-                  <p class="text_box text1 noborder_text baskerville">
-                    Good reasons
-                  </p>
-                  <p class="text_box text1 border_text baskerville">
-                    Good reasons
-                  </p>
-                  <p class="text_box text2 baskerville">for</p>
-                  <p class="text_box text3 baskerville">Good results.</p>
-                </div>
-                <div class="mid_text">
-                  <p class="mid_text1 pretendard fw_500">
-                    바이리즌은 아름다움을 향한<br />수많은 시행착오와
-                    고민들로부터<br />자유로워지고 싶은 사람들을 위해
-                    만들어졌습니다.
-                  </p>
-                  <p class="mid_text2 pretendard fw_500">
-                    시술자도, 시술을 받는 사람까지도<br />온전히 결과에만 집중할
-                    수 있도록<br />선택의 이유를 만듭니다.
-                  </p>
-                </div>
-                <p class="img_list img01">
-                  <img src="../resources/images/main/sec01_img01.png" alt="img01" />
-                </p>
-                <p class="img_list img02">
-                  <img src="../resources/images/main/sec01_img02.png" alt="img02" />
-                </p>
-                <p class="img_list img03">
-                  <img src="../resources/images/main/sec01_img03.png" alt="img03" />
-                </p>
-                <p class="img_list img04">
-                  <img src="../resources/images/main/sec01_img04.png" alt="img04" />
-                </p>
-              </div>
-            </div>
-            <div id="sec02" class="section">
-              <div class="bg"></div>
-              <div class="sec_wrap">
-                <div class="sec_tit">
-                  <p class="big pretendard fw_600 txt1">단 하루의 시술,</p>
-                  <p class="big pretendard fw_600 txt2">그러나 수년간의 연구</p>
-                </div>
-                <div class="sec_cont">
-                  <div class="circle_img img_cont">
-                    <img class="cir_img cir_img1" src="../resources/images/main/circle01.png" alt="" />
-                    <img class="cir_img cir_img2" src="../resources/images/main/circle02.png" alt="" />
-                    <img class="cir_img cir_img3" src="../resources/images/main/circle03.png" alt="" />
-                    <img class="cir_img cir_img4" src="../resources/images/main/circle04.png" alt="" />
-                  </div>
-                  <div class="yy_cont">
-                    <div class="cont_list_wrap">
-                      <div class="cont_list">
-                        <p class="yy_p baskerville">
-                          2020<span class="yy_bar"></span>
-                        </p>
-                        <div class="text_p pretendard fw_600">
-                          식품의약품안전처 (MFDS) 허가
-                        </div>
-                      </div>
-                      <div class="cont_list">
-                        <p class="yy_p baskerville">
-                          2014<span class="yy_bar"></span>
-                        </p>
-                        <div class="text_p pretendard fw_600">
-                          의료기기 허가용 임상시험 완료<br />
-                          <span>코입술주름개선에 대한 유효성 및 안전성 비교 임상</span>
-                        </div>
-                      </div>
-                      <div class="cont_list">
-                        <p class="yy_p baskerville">
-                          2012<span class="yy_bar"></span>
-                        </p>
-                        <div class="text_p pretendard fw_600">
-                          의료기기 허가용 임상시험 시작<br />
-                          <span>코입술주름개선에 대한 유효성 및 안전성 비교 임상</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="sec03" class="section">
-              <div class="bg"><div class="bg_img"></div></div>
-              <div class="sec_wrap">
-                <div class="sec_tit">
-                  <p class="big pretendard fw_600 txt1">느껴보세요.</p>
-                  <p class="big pretendard fw_600 txt2">수분을 끌어당기는</p>
-                  <p class="big pretendard fw_600 txt3">히알루론산의 힘</p>
-                  <p class="small baskerville">Hyaluronic Acid</p>
-                </div>
-                <div class="pd_box">
-                  <p class="pd_img">
-                    <img src="../resources/images/main/sec03_pd.png" alt="제품 이미지" />
-                  </p>
-                </div>
-                <div class="pd_info">
-                  <div class="pd_info_wrap">
-                    <div class="info_tit pretendard fw_600">
-                      KEY INGREDIENTS
-                    </div>
-                    <div class="info_text">
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[주성분]</span> Hyaluronic Acid 20mg
-                      </p>
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[품목명]</span> 조직 수복용 생체 재료
-                      </p>
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[사용목적]</span> 안면부 주름의 일시적 개선
-                      </p>
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[포장단위]</span> 1.1ml*2sy / box
-                      </p>
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[니들]</span> JBP 30G needle
-                      </p>
-                      <p class="pretendard fw_600">
-                        <span class="fw_300">[리도케인]</span> 0.3% 함유
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="sec04" class="section">
-              <div class="sec_wrap">
-                <div class="sec_tit">
-                  <div class="big baskerville">Our RYZN</div>
-                  <div class="text1 small pretendard fw_600">
-                    바이리즌을 선택해야하는
-                    <p>이<span></span></p>
-                    <p>유<span></span></p>
-                  </div>
-                  <div class="text2 small pretendard fw_600">
-                    단 한번이라도 안전하게, 만족스럽게
-                  </div>
-                </div>
-                <div class="ryzn_box">
-                  <div class="ryzn_list ryzn_list1">
-                    <p class="ryzm_img">
-                      <img src="../resources/images/main/sec04_img01.png" alt="웃고있는 사람 얼굴" />
-                    </p>
-                    <p class="ryzn_text">
-                      바이리즌 스킨부스터 HA는<br />
-                      한국식품의약품안전처(MFDS) 허가를<br />
-                      받은 의료기기이며 임상시험 결과를 통해<br />
-                      유효성 및 안전성을 입증 받았습니다.
-                    </p>
-                    <p class="right_text baskerville">Scientific proof</p>
-                  </div>
-                  <div class="ryzn_list ryzn_list2">
-                    <p class="ryzm_img">
-                      <img src="../resources/images/main/sec04_img02.png" alt="연구하고있는 이미지" />
-                    </p>
-                    <p class="ryzn_text r">
-                      바이리즌은 판매사 휴젤의<br />
-                      탄탄한 R&D기술력과 20년 에스테틱<br />
-                      전문경험 바탕으로 탄생한 브랜드입니다.
-                    </p>
-                    <p class="right_text baskerville">Aesthetic proof</p>
-                  </div>
-                </div>
-                <div id="title" class="pretendard">
-                  <p>이 모든 것을 경험할 수 있는</p>
-                  <p>바이리즌을 만나보세요.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="sec05" class="section panel">
-            <span class="cover"></span>
-            <div class="sec_wrap">
-              <div id="gallery">
-                <div class="slide_cont">
-                  <div><img src="../resources/images/main/new_slide_01.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_02.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_03.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_04.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_05.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_06.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_07.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_08.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_09.png" alt="" /></div>
-                  <div><img src="../resources/images/main/new_slide_10.png" alt="" /></div>
-                </div>
-                <div class="slide_arr">
-                  <a href="javascript:void(0);" class="prev arr_btn"><img src="../resources/images/main/new_arr_l.png" alt="" /></a>
-                  <a href="javascript:void(0);" class="next arr_btn"><img src="../resources/images/main/new_arr_r.png" alt="" /></a>
-                </div>
-                <div class="keyPaging">
-                  <span id="currentKey" class="pretendard"></span><span class="pretendard">/10</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="footer" class="footer">
-            <div class="foot_wrap">
-              <div class="left_box footer_logo">
-                <p class="foot_logo">
-                  <img src="../resources/images/main/foot_logo.svg" alt="foot_logo" />
-                </p>
-              </div>
-              <div class="right_box footer_text">
-                <p class="foot_top pretendard fw_500">
-                  판매원 : 휴젤(주)<br />
-                  이 제품은 ‘의료기기’이며 ‘사용상의 주의사항’과 ‘사용방법’을 잘
-                  읽고 사용하십시오.<br />
-                  조직수복용생체재료(바이리즌 스킨부스터 HA : 리도카인 포함 ),
-                  가교 히알루론산을 피하에 주입하여 물리적인 수복을 통해<br />
-                  성인의 안면부 주름을 일시적으로 개선하기 위해 사용
-                </p>
-                <p class="foot_bot pretendard fw_500">
-                  회사명 : 휴젤(주) HUGEL 대표자 : 한선호, 문형진<br />
-                  주소 : 강원특별자치도 춘천시 신북읍 신북로 61-20
-                  사업자등록번호 : 211-87-04515
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+					</section>
+					<div id="sec01Scroll"></div>
+					<section id="sec01" class="sec01 on">
+						<div class="logo"><img src="https://byryzn.co.kr/assets/images/logoColor.svg" alt="BYRYZN 로고"></div>
+						<div class="contWrap">
+							<div class="txtWrap">
+								<p class="str pretendard fw_600 txt01">인상깊다</p>
+								<div class="txtBox txtBox01">
+									<p class="pretendard fw_500">저</p>
+									<p class="pretendard fw_500">깊은 곳부터</p>
+									<p class="pretendard fw_500">차곡차곡</p>
+								</div>
+								<div class="txtBox txtBox02">
+									<p class="pretendard fw_500">단단하게 채워진</p>
+									<p class="pretendard fw_500">섬세함으로</p>
+								</div>
+								<p class="str pretendard fw_600 txt02">깊고 깊다<span class="line"></span></p>
+							</div>
+						</div>
+						
+					</section>
+					<div id="sec02Scroll"></div>
+					<section id="sec02" class="sec02">
+						<div class="contWrap">
+							<div class="leftBox">
+								<div class="videoBox">
+									<video autoplay muted loop playsinline>
+										<source src="https://byryzn.co.kr/assets/video/sec02Bg.mp4" type="video/mp4">
+									</video>
+								</div>
+							</div>
+							<div class="rightBox">
+								<div class="tit">
+									<p class="fw_600 tit01">메디컬 사이언스로 탄생한</p>
+									<p class="fw_600 tit02">깊이가 다른 변화</p>
+									<p class="fw_600 tit03">바이리즌 스킨부스터 HA</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div id="sec03scroll"></div>
+					<section id="sec03" class="sec03">
+						<div class="contWrap">
+							<div class="left conBox">
+								<div class="tit">
+									<strong class="fw_600">지금 확인하세요</strong>
+									<p class="fw_500">임상으로 입증된 바이리즌 스킨부스터HA의 효과</p>
+								</div>
+								<div class="txtWrap">
+									<div class="txt txt01"><p class="fw_500"><span>뺨 부위 피부 주름 중증도</span>를 평가하였을 때 개선됨을 확인하였습니다.</p></div>
+									<div class="txt txt02"><p class="fw_500"><span>평균 잔주름 높이</span>가 감소됨을 확인하였습니다.</p></div>
+								</div>
+								<div class="inforTxt">
+									<p>* 히알루론산 필러 피내 주사의 유효성 및 안전성을 평가하기 위한 단일 기관, 단일군, 공개, 탐색 임상시험</p>
+									<ul>
+										<li><p>연구 기관 : 연세대학교 의과대학 피부과학 교실</p></li>
+										<li><p>연구 기간 : 2주 간격으로 3회 시술 후 6주, 8주, 12주 차 방문 관찰 및 검사</p></li>
+										<li><p>연구 대상 : 만 30세 이상 60세 이하 성인 남녀 20명</p></li>
+										<li><p>연구 방법 : 연구 대상자에게 제품을 피내주사 후 안면부 뺨 부위 주름 중증도 평가 및 잔주름 측정</p></li>
+										<li><p>임상시험 기관 : 연세대학교 의과대학 세브란스 병원</p></li>
+									</ul>
+									<p>* 본 임상시험은 식약처 허가 임상과는 무관한 의뢰자 주도 연구(SIT)로 기업 자체적으로 진행한 임상시험입니다. (의뢰자 : ㈜휴젤)</p>
+								</div>
+							</div>
+							<div class="right conBox">
+								<div class="rightWrap">
+									<div class="imgBox"><img src="https://byryzn.co.kr/assets/images/sec03Img1.png" alt=""></div>
+									<div class="imgBg"><img src="https://byryzn.co.kr/assets/images/sec03Img2.png" alt=""></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="sec04" class="sec04">
+						<div class="contWrap">
+							<div class="tit">
+								<p class="fw_600">지금</p>
+								<p class="fw_600">바이리즌을 만나보세요.</p>
+							</div>
+						</div>
+					</section>
+					<section id="sec05" class="sec05">
+						<div class="contWrap">
+							<div class="secTit">
+								<p class="fw_600">바이리즌은 바라봅니다<br>
+									아름다움을 고민하는 당신을 더 깊이 있게, 섬세하게</p>
+							</div>
+							<div class="pdBox pdBox01">
+								<p class="pdImg"><img src="https://byryzn.co.kr/assets/images/sec05Img1.png" alt="skin booster"></p>
+							</div>
+							<div class="pdBox pdBox02">
+								<p class="pdImg"><img src="https://byryzn.co.kr/assets/images/sec06Img2.png" alt="skin booster"></p>
+							</div>
+							<div class="pdBox pdBox03">
+								<p class="pdImg"><img src="https://byryzn.co.kr/assets/images/sec06Img3.png" alt="skin booster"></p>
+							</div>
+							<div class="pdInfo">
+								<div class="pdWrap">
+									<div class="textBox textBox01">
+										<div class="pdTit">
+											<p class="fw_600">바이리즌 스킨부스터HA</p>
+										</div>
+										<div class="pdTxt">
+											<p class="fw_600">
+												<span class="pretendard fw_300">[주성분]</span> Hyaluronic Acid 20mg
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[품목명]</span> 조직 수복용 생체 재료
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[사용목적]</span> 안면부 주름의 일시적 개선
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[포장단위]</span> 1.1mL*2syr / box
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[니들]</span> 33G 4mm
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[라도케인]</span> 0.3% 함유
+											</p>
+										</div>
+									</div>
+									<div class="textBox textBox02">
+										<div class="pdTit">
+											<p class="fw_600">바이리즌 스킨부스터 엑서밋</p>
+										</div>
+										<div class="pdTxt">
+											<p class="fw_600">
+												<span class="pretendard fw_300">[주성분]</span> 인체지방조직유래줄기세포배양액 80mg
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[사용목적]</span> 피부재생, 콜라겐 증가, 주름개선, 피부 장벽 강화
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[포장단위]</span> 1제 270mg*6 Vials / box
+											</p>
+											<p class="fw_600 padding">
+												&nbsp; 2제 6ml*6 Vials / box
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[주의사항]</span> 냉장보관(2~8°C)
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[사용기간]</span> 개봉 후 3시간 이내 사용 권장
+											</p>
+										</div>
+									</div>
+									<div class="textBox textBox03">
+										<div class="pdTit">
+											<p class="fw_600">바이리즌 크림 MD</p>
+										</div>
+										<div class="pdTxt">
+											<p class="fw_600">
+												<span class="pretendard fw_300">[사용목적]</span> 화상이나 건조한 피부 등으로 손상된 피부의
+											</p>
+											<p class="fw_600 padding">
+												&nbsp; 보호를 위해 사용하는 창상피복재
+											</p>
+											<p class="fw_600">
+												<span class="pretendard fw_300">[포장단위]</span> 100g / case
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[주의사항]</span> 직사광선이나 고온, 고습한 장소를 피해 보관
+											</p>
+											<p class="pretendard fw_600">
+												<span class="fw_300">[사용기간]</span> 개봉일로부터 6개월
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="sec06" class="sec06">
+						<div class="contWrap">
+							<div class="tit">
+								<p class="fw_600 tit01">느껴보세요</p>
+								<p class="fw_600 tit02">차곡차곡</p>
+								<p class="fw_600 tit03">쌓아 올린 변화</p>
+							</div>
+						</div>
+					</section>
+					<section id="sec07" class="sec07">
+						<div class="contWrap">
+							<div class="tit">
+								<strong class="fw_600">마케팅 자료 다운로드</strong>
+								<p class="fw_500">바이리즌과 함께해주셔서 진심으로 감사합니다.</p>
+								<p class="fw_500">깊이 있는 신뢰와 만족을 위해 항상 노력하겠습니다.</p>
+							</div>
+							<form id="hospitalForm" method="post" action="">
+								<input type="hidden" name="UserUUID" value="">
+								<div class="formWrap">
+									<div class="row">
+										<div class="left rowCon">
+											<p class="fw_600">병원명<span class="star">*</span></p>
+											<input type="text" name="hospital" id="hospital" placeholder="병원명 입력">
+										</div>
+										<div class="right rowCon">
+											<p class="fw_600">지역<span class="star">*</span></p>
+											<select name="region" id="region">
+												<option value="">운영 중인 병원 지역 선택</option>
+												<option value="1">서울특별시</option>
+												<option value="2">부산광역시</option>
+												<option value="3">대구광역시</option>
+												<option value="4">울산광역시</option>
+												<option value="5">인천광역시</option>
+												<option value="6">대전광역시</option>
+												<option value="7">광주광역시</option>
+												<option value="8">세종특별자치시</option>
+												<option value="9">경기도</option>
+												<option value="10">충청북도</option>
+												<option value="11">충청남도</option>
+												<option value="12">전라남도</option>
+												<option value="13">경상북도</option>
+												<option value="14">경상남도</option>
+												<option value="15">강원특별자치도</option>
+												<option value="16">전북특별자치도</option>
+												<option value="17">제주특별자치도</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="left rowCon">
+											<p class="fw_600">원장님 성함</p>
+											<input type="text" id="manager" name="manager" placeholder="원장님 성함 입력">
+										</div>
+										<div class="right rowCon">
+											<p class="fw_600">이메일<span class="star">*</span></p>
+											<div class="email">
+												<div class="emailWrite">
+													<input type="text" id="emailStart" name="emailStart" placeholder="이메일 입력" class="fw_500" />
+													<span class="fw_400">@</span>
+													<input type="text" id="emailEnd" name="emailEnd" placeholder="이메일 입력" class="fw_500" readonly />
+												</div>
+												<select name="emailSelect" id="emailSelect">
+													<option value="">선택</option>
+													<option value="direct">직접입력</option>
+													<option value="naver.com">naver.com</option>
+													<option value="gmail.com">gmail.com</option>
+													<option value="kakao.com">kakao.com</option>
+													<option value="nate.com">nate.com</option>
+													<option value="hanmail.net">hanmail.net</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="left rowCon">
+											<p class="fw_600">연락처</p>
+											<div class="tel">
+												<input type="tel" id="phoneStart" name="phoneStart" maxlength="3"><span></span>
+												<input type="tel" id="phoneMiddle" name="phoneMiddle" maxlength="4"><span></span>
+												<input type="tel" id="phoneEnd" name="phoneEnd" maxlength="4">
+											</div>
+										</div>
+										<div class="right rowCon">
+											<p class="fw_600">영업 담당자명</p>
+											<input type="text" id="saleManager" name="saleManager" placeholder="바이리즌 영업 담당자명 입력">
+											<!-- <p class="fw_400 salesTxt">※ 바이리즌 병원 영업 담당자와의 연락이 필요하시다면 <a href="mailto:aaa@hugel.co.kr">aaa@hugel.co.kr</a>로 메일주세요.</p> -->
+										</div>
+									</div>
+									<div class="row">
+										<div class="left rowCon rowConDown">
+											<p class="fw_600">인증코드<span class="star">*</span></p>
+											<input type="text" id="downCode" name="downCode" placeholder="다운로드를 위한 인증코드 입력">
+										</div>
+									</div>
+									<div class="agreeWrap">
+										<p class="fw_600">개인정보 수집 동의 <span class="star">*</span></p>
+										<div class="agreeTxt">
+											<p class="fw_400">이와 관련하여 아래와 같이 귀하의 개인정보를 수집 및 이용 이용 내용을 개인정보보호법 제15조(개인정보의 수집·이용) 및 통계법 33조(비밀의 보호 등)에 의거하여 안내 드리니 확인하여 주시기<br> 바랍니다.</p>
+											<ul>
+												<li class="fw_400">정보 보유기간 : 정보 제출 후 1년</li>
+												<li class="fw_400">사용처 : 마케팅 자료 발송</li>
+											</ul>
+										</div>
+										<div class="agreeBox">
+											<label for="agreeCheck">
+												<input type="checkbox" name="agreeCheck" id="agreeCheck">
+												<p>마케팅 자료 정보 수신에 동의합니다.</p>
+											</label>
+										</div>
+									</div>
+									<div class="btnBox">
+										<a href="javascript:void(0);" class="pretendard fw_600 downBtn">병원 전용 마케팅 자료 다운로드</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</section>
+					<footer id="footer">
+						<div class="footerWrap">
+							<div class="ftLeft">
+								<img src="https://byryzn.co.kr/assets/images/footerLogo.svg" alt="바이리즌 로고">
+							</div>
+							<div class="ftRight">
+								<ul>
+									<li><a href="" target="_blank" title="새창 열림" class="fw_700">개인정보처리방침</a></li>
+									<li>
+										<p class="fw_500">판매원: 휴젤㈜ ㅣ 광고심의필: 42024-I10-11-0879 (유효기간: 27.04.16)</p>
+										<p class="fw_500">이 제품은 ‘의료기기’이며, ‘사용상의 주의사항’과 ‘사용방법’을 잘 읽고 사용하십시오.</p>
+										<p class="fw_500">조직수복용생체재료(바이리즌 스킨부스터 HA : 리도카인 포함), 가교 히알루론산을 피하에 주입하여 물리적인 수복을 통해 성인의 안면부 주름을 일시적으로 개선하기 위해 사용</p>
+									</li>
+									<li>
+										<p class="fw_500">회사명 : 휴젤(주) HUGEL대표자 : 한선호, 문형진</p>
+										<p class="fw_500">주소 : 강원특별자치도 춘천시 신북읍 신북로 61-20 사업자등록번호 : 211-87-04515</p>
+										<p class="fw_500">Copyright(C) 2024 HUGEL All rights reserved.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			
 
-      <!-- 팝업 -->
-      <div id="popupLayer" style="display: none">
-        <div class="dim"></div>
-        <div id="pop01" class="pop_box" style="display: none">
-          <a href="javascript:void(0);" class="pop_closed">
-            <img src="../../resources/images/main/close.svg" alt="닫기" />
-          </a>
-          <div class="pop_cont">
-            <div class="title_box">
-              <h1>병원 찾기</h1>
-              <p>
-                차별화된 서비스와 능력있는 선생님들이 바이리즌을
-                선택해주셨습니다.
-              </p>
-            </div>
-            <div class="content_box">
-              <ul>
-                <li class="title_li">
-                  <div class="left_box">
-                    <p>병원명</p>
-                  </div>
-                  <div class="right_box">
-                    <p>병원 정보</p>
-                  </div>
-                </li>
-                <ul id="hospitalList" class="hospital_li">
-                  <!-- <li>
-                      <div class="left_box">
-                          <p class="hospital_name">세인트의원</p>
-                          <a class="map" href="#" target="_blank">지도로 보기</a>
-                      </div>
-                      <div class="right_box">
-                          <p class="location">경기 의정부시 평화로 540 (의정부동) 6층</p>
-                          <p class="call">031-829-1004</p>
-                      </div>
-                  </li> -->
-                </ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+			<div id="layerPop" class="popup">
+				<a href="javascript:void(0);" class="closeBtn">
+					<img src="https://byryzn.co.kr/assets/images/closeBtn.svg" alt="닫기">
+				</a>
+				<div class="popWrap"></div>
+			</div>
+		</div>
+		<script>
+			
+			$('.downBtn').on('click',function(e){
+				e.preventDefault();
+
+				if(validateForm()){
+					const userUUID = getUUID();
+					$("input[name=UserUUID]").val(userUUID);
+					$('#hospitalForm').submit();
+				}
+			})
+			
+		</script>
+	</body>
 </html>
