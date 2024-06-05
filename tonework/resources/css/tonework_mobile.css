@@ -95,7 +95,7 @@
   .main_sns_swiper .swiper-slide {max-height:100%;} 
   .footer {padding: 60px 0;}
   .footer_top {flex-direction: column;position: relative;}
-  .footer_toggle {display: block;width: 40px;height: 40px;position: absolute;top: 16px;right: 0;font-size: 0;color: transparent;text-indent: -9999px;background: url("/resources/images/icon/ico_16_arrow_down_w.svg") no-repeat  center;background-size: 16px;}
+  .footer_toggle {display: block;width: 40px;height: 40px;position: absolute;top: 16px;right: 0;font-size: 0;color: transparent;text-indent: -9999px;background: url("../images/icon/ico_16_arrow_down_w.svg") no-repeat  center;background-size: 16px;}
   footer.on .footer_toggle {transform: rotate(180deg);}
   footer.on .footer_top .site_map,
   footer.on .footer_bottom .footer_address {display: flex;}

@@ -1,187 +1,181 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="tonework/resources/css/style.css">
-  <title>내부프로젝트 clone coding</title>
+  <title>프로젝트 파일리스트</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <style type="text/css">
+  *{margin: 0; padding: 0;box-sizing: border-box;}
+  body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, table, caption, tr, th, td, thead, tbody, tfoot, form, fieldset, p, hr, blockquote, address{margin: 0; padding: 0;}
+  ul, ol{list-style: none;}
+  a{color: #000; text-decoration: underline;}
+  img{border:0;}
+  address, em{ font-style: normal; }
+  label, input{vertical-align: middle;}
+  input{outline: none}
+  table, tr, th, td{border-collapse: collapse; border-spacing:0;}
+  caption{width: 100%; height: 30px;}
+  body{padding: 0 20px;font-size: 16px;font-family: 'Noto Sans KR', sans-serif;}
+  h1, h2, h3, h4, h5, h6{font-weight: bold;}
+  p{line-height: 1.5;}
+  .clearfix:after{content:'';display: block;clear: both;}
+  .wrapper{width:100%; margin:auto; }
+  table{width:100%; border-bottom:1px solid #f4f4f4; margin-bottom:50px;border-top:3px solid #d2d6de;}
+  h1{font-size:2rem; font-weight: normal; margin:40px 0;}
+  h2{font-size:1rem; font-weight: normal; margin-bottom:20px;}
+  hr{margin-bottom:50px;}
+  table tr th{font-weight: normal; border-right:1px solid #f4f4f4; border-bottom:1px solid #f4f4f4;background-color:#fff;}
+  table tr td:first-child{width:15%;padding-left: 20px;text-align: left;}
+  table tr td:nth-of-type(2){width:15%;}
+  table tr td:nth-of-type(3){width:15%;}
+  table tr td:nth-of-type(4){width:15%;}
+  table tr td:nth-of-type(5){width:40%;}
+  table tr th, table tr td{padding:10px;font-size: 16px;text-align: center;}
+  table tr th:last-child{border-right:none;}
+  table tr td{padding: 5px;font-size: 14px;border-bottom:1px solid #f4f4f4; border-right:1px solid #f4f4f4;color: #666;}
+  table tr td:last-child{border-right:none;}
+  table tr td a{display: block;width: 100%;height: 100%;}
+  table tr th.category{position: relative;padding: 10px;text-align: left;font-size: 15px;background-color: #f9f9f9;color: #1d1e25;}
+  table tr th.category:before{position: absolute;top: 0;left: 0;display: inline-block;width: 3px;height: 100%;background-color: #d2d6de;content: '';}
+  table tr:last-child td{border-bottom:none;}
+  .top{padding-bottom: 30px;}
+  .top ul{float: left;margin-bottom:20px;}
+  .top ul li{float: left; margin-right:10px; line-height:25px;}
+  .top ul li:first-child,.top ul li:nth-of-type(8){font-size:1rem;}
+  .top ul li:nth-of-type(2) span,.top ul li:nth-of-type(4),.top ul li:nth-of-type(6),.top ul li:nth-of-type(9),.top ul li:nth-of-type(11){ text-align: center; border-radius: 50%;}
+  .top ul{margin-bottom:50px;}
+  .r{background-color: #a55eea; color:#fff; display:inline-block; width:25px; height:25px; border-radius: 50%; line-height: 25px;}
+  .r:before{content: 'R';}
+  .w{background-color: #20bf6b; color:#fff; display:inline-block; width:25px; height:25px; border-radius: 50%; line-height: 25px;}
+  .w:before{content: 'W';}
+  .m{background-color: #f7b731; color:#fff; display:inline-block; width:25px; height:25px; border-radius: 50%; line-height: 25px;}
+  .m:before{content: 'M';}
+  .end{background-color: #eb3b5a; color:#fff; display:inline-block; width:25px; height:25px; border-radius: 50%; line-height: 25px; font-weight: bold;}
+  .end:before{content: '완';}
+  .ing{background-color: #2d98da; color:#fff; display:inline-block; width:25px; height:25px; border-radius: 50%; line-height: 25px; font-weight: bold;}
+  .ing:before{content: '진';}
+  .modify{color:#fff; display:inline-block; width:auto; height:25px; padding: 0 5px;border-radius: 30px; line-height: 25px; font-weight: bold; background-color:#39c4cd; text-align: center;}
+  .modify:before{content: '수정';}
+  .t_em{color: #e10e0e;}
+  .t_re{color: #046ac9;}
+  .t_pu{color: #17ae03;}
+  .t_lg{color: #c904b4;}
+  .status{float:right;width:300px}
+  .status span{font-size: 16px;color: #666;}
+  .status #progress{overflow: hidden;float: left;display:block; width:100%; height:20px;margin-bottom: 5px;background:#eee;border-radius:30px;}
+  .status #progress em{display:block; height:100%; background:#eb3b5a;border-radius:30px;}
+  .status #finish{color:#1352a2}
+  .status #total{display: block;}
+  .status .percent{display: block;float: right;}
+  .list.none a{text-decoration:line-through;color:#aeaeae;cursor:not-allowed;}
+  </style>
 </head>
+
 <body>
-  <section class="" class="">
-    <div class="">
-      <svg xmlns="http://www.w3.org/2000/svg" width="441.693" height="815.628" viewBox="0 0 441.693 815.628">
-        <path class="brd_ani_line01" d="M245.792-318c-5.324 5.333-31.848 17.8-97.341 25-81.866 9-307.5-16-337.447 95C-246.427 14.847 189.385-51 204.36 106c11.98 125.6-9.568 300-223.568 390" transform="translate(195.193 318.707)" style="fill:none;stroke:#dbf068;stroke-width:2px"/>
-      </svg>
+  <div class="wrapper">
+    <header class="header">
+      <h1>내부프로젝트 퍼블 현황</h1>
+      <div class="top clearfix">
+        <ul>
+          <li>구분 : </li>
+          <li><span class="r"></span></li>
+          <li>반응형</li>
+          <li><span class="w"></span></li>
+          <li>WEB</li>
+          <li><span class="m"></span></li>
+          <li>모바일&nbsp;&nbsp;&nbsp;/ </li>
+          <li>상태 : </li>
+          <li><span class="end"></span></li>
+          <li>완료</li>
+          <li><span class="ing"></span></li>
+          <li>진행중&nbsp;&nbsp;&nbsp;/ </li>
+          <li><span class="modify"></span></li>
+          <li>수정</li>
+        </ul>
+        <div class="status"><span id="progress"><em></em></span> <span id="total"></span></div>
+      </div>
+    </header>
+    <div class="content">
+      <table>
+        <tr>
+          <th>페이지</th>
+          <th>파일명</th>
+          <th>구분</th>
+          <th>상태</th>
+          <th>참고사항</th>
+        </tr>
+        <tr>
+          <th class="category" colspan="5">TONEWORK</th>
+        </tr>
+        <tr class="list">
+          <td>TONEWORK(main)</td>
+          <td><a href="/tonework/html/main.html" target="_blank">main.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td>
+            <!-- <p class="t_em">2022.11.03 수정</p> -->
+          </td>
+        </tr>
+        <tr class="list">
+          <td>TONEWORK(sub1)</td>
+          <td><a href="/tonework/html/brand_about.html" target="_blank">brand_about.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td>
+            <!-- <p class="t_em">2022.11.03 수정</p> -->
+          </td>
+        </tr>
+        <tr class="list">
+          <td>TONEWORK(sub2)</td>
+          <td><a href="/tonework/html/skin_tone.html" target="_blank">skin_tone.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="category" colspan="5">BYRYZN</th>
+        </tr>
+        <tr class="list">
+          <td>BYRYZN(main)</td>
+          <td><a href="/byryzn/html/main.html" target="_blank">main.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th class="category" colspan="5">HUVITZ</th>
+        </tr>
+        <tr class="list">
+          <td>HUVITZ(main)</td>
+          <td><a href="/huvitz/html/main.html" target="_blank">main.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td></td>
+        </tr>
+        <tr class="list">
+          <td>HUVITZ(sub)</td>
+          <td><a href="/huvitz/html/company_info.html" target="_blank">company_info.html</a></td>
+          <td><span class="r"></span></td>
+          <td><span class="end"></span></td>
+          <td></td>
+        </tr>
+      </table>
     </div>
-  </section>
-  <section class="">
-    <div class=""></div>
-  </section>
-  <section class="section section03">
-    <ul class="coding_list">
-      <li class="coding_box">
-        <img src="tonework/resources/images/@sample_modal_review_01.png" alt="" />
-      </li>
-      <li class="coding_box">
-        <img src="tonework/resources/images/@sample_modal_review_02.png" alt="" />
-      </li>
-      <li class="coding_box">
-        <img src="tonework/resources/images/@sample_modal_review_03.png" alt="" />
-      </li>
-    </ul>
-  </section>
+  </div>
+
+	<script type="text/javascript" src="/tonework/resources/js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function(){
+			var $content = $(".content table"),
+				total = $content.find(".list").length,
+				finish = $content.find(".list .end").length,
+				progress = Math.floor((finish) / total * 100);
+      console.log(total, finish);
+			$("#progress em").css("width", progress + "%");
+			$("#total").html(finish+" / "+total+"page"+"<span class='percent'>진행률 "+ progress +"%</span>");
+		});
+	</script>
 </body>
-<script src="tonework/resources/js/jquery-3.6.0.min.js"></script>
-<script src="tonework/resources/js/jquery-ui.min.js"></script>
-<script src="tonework/resources/js/gsap.min.js"></script>
-<script src="tonework/resources2/js/lib/ScrollTrigger.min.js"></script>
-<script>
-$(document).ready(function(){
-  //스크롤시 로고 변형
-  const tl0 = gsap.timeline();
-    tl0.to(".main header .logo", { position: 'absolute', top:0, left:0, width:240, height:30}); 
-    ScrollTrigger.create({
-      animation: tl0,
-      trigger: ".main_top",
-      start: "top+=500px center",
-      end: "bottom-=100px center",
-      scrub: true,
-      markers: true,
-    })
 
-    // 메인 비주얼 슬라이드
-    /*
-    var mainSwiper = new Swiper(".main_swiper", {
-      slidesPerView: 1,
-      simulateTouch: true,
-      speed: 1000,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      preloadImages: true,
-      updateOnImagesReady: true,
-      grabCursor: true,
-      effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: ["-20%", 0, -1],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: "true",
-        type: "bullets",
-        renderBullet: function (index, className) {
-          return ('<span class="' + className + '">' +"<i></i>" + "<b></b>" + "</span>"
-          );
-        },
-      },
-    }); */
-    
-
-    //메인 바이 미, 톤 링커 슬라이드
-    /*
-    var bymeSwiper = new Swiper(".byme_swiper", {
-      slidesPerView: 1,
-      direction: "vertical",
-      simulateTouch: true,
-      speed: 1000,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      allowTouchMove : true,
-      observer:true,
-      observeParents:true,
-    });
-
-    //메인 with 톤워크 슬라이드
-    var withSwiper = new Swiper(".main_sns_swiper", {
-      slidesPerView: 4,
-      speed: 1000,
-      spaceBetween:8,
-      loop: false,
-      simulateTouch: true,
-      allowTouchMove : true,
-      observer:true,
-      observeParents:true,
-    }); */
-
-    // 길이 구하기
-    // var cl = document.querySelector(".brd_ani_line03");
-    // function circleLine(el) {
-    //   var lineL = el.getTotalength();
-    //   el.style.strokeDasharray = line;
-    //   el.style.strokeDashoffset = line;
-
-    //   console.log(line)
-    // }
-
-
-    //브랜드 스토리 svg 라인 그리기
-    const tl1 = gsap.timeline();
-    tl1.to(".brd_ani_line01", { strokeDashoffset: 0,}); 
-    ScrollTrigger.create({
-      animation: tl1,
-      trigger: ".step_01",
-      start: "top+=100px center",
-      end: "bottom-=100px center",
-      scrub: 1,
-      markers: true,
-      toggleClass:{targets:'.number.number01',className:'active'},
-    })
-
-    const tl2 = gsap.timeline();
-    tl2.to(".brd_ani_line02", { strokeDashoffset: 0,});
-    ScrollTrigger.create({
-      animation: tl2,
-      trigger: ".step_02",
-      start: "top+=100px center",
-      end: "bottom-=100px center",
-      scrub: 1,
-      markers: true,
-      toggleClass:{targets:'.number.number02',className:'active'},
-    })
-
-    const tl3 = gsap.timeline();
-    tl3.to(".brd_ani_line03", { strokeDashoffset: 0,});
-    ScrollTrigger.create({
-      animation: tl3,
-      trigger: ".step_03",
-      start: "top+=100px center",
-      end: "bottom-=100px center",
-      scrub: 1,
-      markers: true,
-      toggleClass:{targets:'.number.number03',className:'active'},
-    })
-
-    ScrollTrigger.create({
-      trigger: ".step_04",
-      start: "top+=100px center",
-      end: "bottom-=100px center",
-      scrub: 1,
-      markers: true,
-      toggleClass:{targets:'.step_final',className:'active'},
-    })
-
-    const tl4 = gsap.timeline();
-    tl4.to(".ico_star", { rotation: 360,});
-    ScrollTrigger.create({
-      animation: tl4,
-      trigger: ".main_cnt_01",
-      start: "top-=200px center",
-      end: "bottom-=100px center",
-      scrub: true,
-      markers: true,
-    })
-    
-});
-</script>
 </html>

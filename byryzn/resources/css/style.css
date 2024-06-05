@@ -90,7 +90,7 @@ section .contWrap .tit p:last-of-type{margin-bottom: 0;}
 #secMain .contWrap .scroll .scrollBox span {position: absolute; top: 50%; left: 50%; width: 4px; transform: translate(-50%, -90%); animation: wheelMove 1s ease-in infinite alternate;}
 
 /* sec01 */
-#sec01 {position: relative; width: 100%; height: 74.36vw; background: url('../images/sec01Bg.jpg') no-repeat top center; background-size: cover; overflow: hidden;}
+#sec01 {position: relative; width: 100%; height: 74.36vw; background: url('../images/main/sec01Bg.jpg') no-repeat top center; background-size: cover; overflow: hidden;}
 #sec01 .logo {position: absolute; left: 2.92vw; top: 2.6vw; width: 8.75vw; height: auto;}
 #sec01 .contWrap {position: relative; display: flex; width: 100%; height: 100vh; padding: 14.58vw 14.58vw 0;}
 #sec01 .txtWrap {position: relative; width: 100%; height: 27.14vw;}
@@ -146,7 +146,7 @@ section .contWrap .tit p:last-of-type{margin-bottom: 0;}
 
 
 /* sec04 */
-#sec04 {background: url('../images/sec04Bg.jpg') no-repeat center center; background-size: cover;}
+#sec04 {background: url('../images/main/sec04Bg.jpg') no-repeat center center; background-size: cover;}
 /* sec05 */
 #sec05 {width: 100%; height: 100vh; background: #fff; overflow: hidden;}
 #sec05 .contWrap {position: relative; height: 100%; padding: 5.2vw 8.44vw 0;}

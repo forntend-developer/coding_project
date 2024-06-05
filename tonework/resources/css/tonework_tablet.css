@@ -200,7 +200,7 @@
     .gnb.active .gnb_info {height:auto;border-top:1px solid #525252;}
     .gnb_list {margin-top:45px;padding:0 20px;width:100%;height:100%;overflow-y:auto;flex-direction:column;justify-content:flex-start;align-items:flex-start}
     .gnb_list > li > a {position:relative;width:100%;padding:11px 16px 11px 0;font-size:2rem;line-height:2.6rem;font-weight:600;opacity:0.4;color:#fff}
-    .gnb_list > li > a:after {z-index:-1;position:absolute;top:16px;right:0;display:block;content:"";width:16px;height:16px;background:url("/resources/images/icon/ico_16_arrow_down_w.svg") no-repeat 0 0;background-size:16px;transition:transform .3s}
+    .gnb_list > li > a:after {z-index:-1;position:absolute;top:16px;right:0;display:block;content:"";width:16px;height:16px;background:url("../images/icon/ico_16_arrow_down_w.svg") no-repeat 0 0;background-size:16px;transition:transform .3s}
     .gnb_list > li.active > a {opacity:1}
     .gnb_list > li.active > a:after {transform:rotate(-180deg)}
     .gnb_list > li > .depth_02 > li a {opacity:0.4}
@@ -337,7 +337,7 @@
     .brand_about_02 .step_04 {margin-top:160px}
     .brand_about_02 .step_01 .step_about, .brand_about_02 .step_02 .step_about, .brand_about_02 .step_03 .step_about {position:static;padding-top:40px}
     .brand_about_02 .step_about .tit {padding:0;padding-right:26px;position:relative}
-    .brand_about_02 .step_about .tit:after {display: block;content: "";width: 26px;height: 26px;position: absolute;top:-26px;right:0;background: url("/resources/images/icon/icon_26_star_point.svg") no-repeat 0 0;background-size: 26px;}
+    .brand_about_02 .step_about .tit:after {display: block;content: "";width: 26px;height: 26px;position: absolute;top:-26px;right:0;background: url("../images/icon/icon_26_star_point.svg") no-repeat 0 0;background-size: 26px;}
     .brand_about_02 .step_about .tit span:before {display:none}
     .brand_about_02 .step_about .cnt {margin-top:16px}
     .brand_about_02 .step_04 .step_final dt svg {width:100%;height:100%;vertical-align:top}

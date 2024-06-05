@@ -49,9 +49,9 @@ var include = {
   title: function () {
     document.write("<title>TONEWORK</title>");
   },
-  favicon: function () {
-    document.write('<link rel="icon" type="image/png" href="/favicon.ico">');
-  },
+  // favicon: function () {
+  //   document.write('<link rel="icon" type="image/png" href="/favicon.ico">');
+  // },
   header: function () {
     document.write('<div class="header_wrap">');
     document.write('<div class="logo_wrap">');
