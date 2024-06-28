@@ -164,7 +164,7 @@ section .contWrap .tit p:last-of-type{margin-bottom: 0;}
 #sec05 .contWrap .pdInfo .pdWrap .pdTxt p span {display: inline-block; margin-right: 0.3vw;}
 #sec05 .contWrap .pdInfo .pdWrap .pdTxt p.padding {padding-left: 4.17vw;}
 /* sec06 */
-#sec06 {background: url('../images/sec06Bg.jpg') no-repeat top center; background-size: cover;}
+#sec06 {background: url('	https://byryzn.co.kr/assets/images/sec06Bg.jpg') no-repeat top center; background-size: cover;}
 
 /* sec07 */
 #sec07 {height: auto;}
